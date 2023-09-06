@@ -29,19 +29,19 @@
   <div
     style="display: flex;
     justify-content: center; text-shadow:
-    0 0 7px #fff; color: white; font-size: 2.5em;  font: Inter;  z-index: 4;"
+    0 0 7px #fff; color: white; font-size: 3em; font-weight: 700; position: relative; top: -2em; font: Inter;  z-index: 4;"
   >
     VANDYHACKS X
   </div>
   <div
     style="display: flex;
-    justify-content: center; font-size: 1.2em; color: #E0E1F5; font: Inter;  z-index: 4;"
+    justify-content: center; font-size: 1.4em; position: relative; top:-4em; color: #E0E1F5; font: Inter;  z-index: 4;"
   >
     October 27 - 29 | Nashville, TN
   </div>
   <div
     style="display: flex;
-  justify-content: center; margin-top: 60px;"
+  justify-content: center; margin-top: 60px; position: relative; top: -6em"
   >
     <div
       style=" display: flex;
