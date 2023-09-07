@@ -63,7 +63,7 @@
                   text-shadow:
     0 0 4px #fff;  z-index: 2;"
           >
-            Coming Soon!
+            Apply Now
           </div>
         </a>
       </div>
