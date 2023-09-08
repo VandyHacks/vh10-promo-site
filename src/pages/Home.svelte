@@ -37,7 +37,7 @@
     style="display: flex;
     justify-content: center; font-size: 1.4em; position: relative; top:-4em; color: #E0E1F5; font: Inter;  z-index: 4;"
   >
-    October 27 - 29 | Nashville, TN
+    October 28 - 29 | Nashville, TN
   </div>
   <div
     style="display: flex;
