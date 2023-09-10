@@ -7,7 +7,7 @@ import FourthCloud from "../components/fourthCloud.svelte";
 import FifthCloud from "../components/fifthCloud.svelte";
 </script>
 
-<div style="position: relative;">
+<div style="position: relative; margin-bottom: 120px;">
 
     <a
         id="mlh-trust-badge"
@@ -94,4 +94,4 @@ import FifthCloud from "../components/fifthCloud.svelte";
         </div>
 
 
-        </div> 
+        </div>
