@@ -1,4 +1,6 @@
 <script>
+	import AboutLeftMountains from "../components/aboutLeftMountains.svelte";
+	import AboutRightMountains from "../components/aboutRightMountains.svelte";
 	import AboutMountain_1 from "../components/about_mountain_1.svelte";
 </script>
 
@@ -19,15 +21,33 @@
 	</div>
 
 	<div class="right-container">
-		<div class="main-img-container">
+		<div class="main-img-container mountain-img-container">
 			<img src="/img/groupphoto.png" alt="group photo" />
 			<div class="mountain1_svg">
 				<AboutMountain_1 />
 			</div>
 		</div>
 		<div class="miniature-container">
-			<img src="/img/miniature1.png" class="miniature-img" alt="miniature 1" />
-			<img src="/img/miniature2.png" class="miniature-img" alt="miniature 2" />
+			<div class="mountain-img-container">
+				<img
+					src="/img/miniature1.png"
+					class="miniature-img"
+					alt="miniature 1"
+				/>
+				<div class="leftmountain_svg">
+					<AboutLeftMountains />
+				</div>
+			</div>
+			<div class="mountain-img-container">
+				<img
+					src="/img/miniature2.png"
+					class="miniature-img"
+					alt="miniature 2"
+				/>
+				<div class="rightmountain_svg">
+					<AboutRightMountains />
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -58,7 +78,7 @@
 	}
 
 	/* Container styles */
-	.main-img-container {
+	.mountain-img-container {
 		position: relative;
 		height: min-content;
 	}
@@ -75,6 +95,21 @@
 		bottom: -25px;
 		width: 200px;
 		left: -85px;
+	}
+
+	.leftmountain_svg {
+		position: absolute;
+		z-index: 1;
+		bottom: -40px;
+		width: 145px;
+		left: -60px;
+	}
+	.rightmountain_svg {
+		position: absolute;
+		z-index: 1;
+		bottom: -17px;
+		width: 148px;
+		right: -52px;
 	}
 
 	.right-container {
@@ -94,5 +129,29 @@
 		width: 175px;
 		object-fit: cover;
 		border-radius: 50%;
+	}
+
+	@media only screen and (max-width: 768px) {
+		.main-container {
+			flex-direction: column;
+			align-items: center;
+		}
+		.text-container {
+			max-width: 100%;
+			padding: 20px;
+		}
+		.about_desc {
+			width: auto;
+		}
+		.right-container {
+			align-items: center;
+		}
+		.miniature-container {
+			flex-direction: column;
+			align-items: center;
+		}
+		.main-img-container img {
+			width: 100%;
+		}
 	}
 </style>
