@@ -2,7 +2,12 @@
   import CloudLeft from "../components/schedule/cloud-left.svelte";
   import CloudRight from "../components/schedule/cloud-right.svelte";
   import Billboard from "../components/schedule/billboard.svelte";
+  import BillboardMobile from "../components/schedule/billboard-mobile.svelte";
   import LightBulb from "../components/schedule/light-bulb.svelte";
+
+  import MediaQuery from "../MediaQuery.svelte";
+
+  let currentPage = 1;
 </script>
 
 <div class="container">
@@ -17,10 +22,26 @@
   <!-- billboard -->
   <div class="center">
     <div class="billboard">
-      <Billboard />
-      <div class="bulb-1">
-        <LightBulb />
-      </div>
+      <!-- mobile -->
+      <MediaQuery query="(max-width: 768px)" let:matches>
+        {#if matches}
+          <BillboardMobile />
+        {/if}
+      </MediaQuery>
+
+      <!-- desktop -->
+      <MediaQuery query="(min-width: 769px)" let:matches>
+        {#if matches}
+          <Billboard />
+
+          <!-- light bulbs -->
+          <div class="bulb-container">
+            <LightBulb bind:currentPage pageNum="1" />
+            <LightBulb bind:currentPage pageNum="2" />
+            <LightBulb bind:currentPage pageNum="3" />
+          </div>
+        {/if}
+      </MediaQuery>
     </div>
   </div>
 </div>
@@ -33,7 +54,7 @@
     height: 100vh;
 
     /* for development purpose */
-    background-color: pink;
+    background-color: #140f2e;
     border: 1px solid black;
   }
 
@@ -65,20 +86,23 @@
     width: 900px;
     height: 600px;
     object-fit: fill;
+    justify-content: center;
 
     /* for development purpose */
-    background-color: teal;
+    /* background-color: teal; */
   }
-  .bulb-1 {
+  .bulb-container {
     position: absolute;
-    top: 0;
-    right: 0;
-  }
+    width: 30%;
+    height: 17%;
+    right: 5%;
+    top: -12%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: -1;
 
-  /* mobile responsiveness */
-  @media (max-width: 868px) {
-    .billboard {
-      width: 95vw;
-    }
+    /* for development purpose */
+    /* background-color: greenyellow; */
   }
 </style>
