@@ -2,10 +2,7 @@
   import CloudLeft from "../components/schedule/cloud-left.svelte";
   import CloudRight from "../components/schedule/cloud-right.svelte";
   import Billboard from "../components/schedule/billboard.svelte";
-  import BillboardMobile from "../components/schedule/billboard-mobile.svelte";
   import LightBulb from "../components/schedule/light-bulb.svelte";
-
-  import MediaQuery from "../MediaQuery.svelte";
 
   let currentPage = 1;
 </script>
@@ -22,26 +19,13 @@
   <!-- billboard -->
   <div class="center">
     <div class="billboard">
-      <!-- mobile -->
-      <MediaQuery query="(max-width: 768px)" let:matches>
-        {#if matches}
-          <BillboardMobile />
-        {/if}
-      </MediaQuery>
+      <Billboard />
 
-      <!-- desktop -->
-      <MediaQuery query="(min-width: 769px)" let:matches>
-        {#if matches}
-          <Billboard />
-
-          <!-- light bulbs -->
-          <div class="bulb-container">
-            <LightBulb bind:currentPage pageNum="1" />
-            <LightBulb bind:currentPage pageNum="2" />
-            <LightBulb bind:currentPage pageNum="3" />
-          </div>
-        {/if}
-      </MediaQuery>
+      <div class="bulb-container">
+        <LightBulb bind:currentPage pageNum="1" />
+        <LightBulb bind:currentPage pageNum="2" />
+        <LightBulb bind:currentPage pageNum="3" />
+      </div>
     </div>
   </div>
 </div>
