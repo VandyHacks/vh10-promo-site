@@ -24,7 +24,6 @@
       <div class="bulb-container">
         <LightBulb bind:currentPage pageNum="1" />
         <LightBulb bind:currentPage pageNum="2" />
-        <LightBulb bind:currentPage pageNum="3" />
       </div>
     </div>
   </div>
@@ -77,7 +76,7 @@
   }
   .bulb-container {
     position: absolute;
-    width: 30%;
+    width: 20%;
     height: 17%;
     right: 5%;
     top: -12%;
