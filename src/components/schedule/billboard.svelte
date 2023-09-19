@@ -20,16 +20,16 @@
   {/if}
 
   <!-- Billboard -->
-  <div class="container">
+  <div class="container" class:container-mobile={matches}>
     <div class="title" class:title-mobile={matches}>Schedule</div>
 
-    <div class="content">
+    <div class="content" class:content-mobile={matches}>
       {#if currentPage == 1}
         <!-- TODO: render page 1 content here -->
         {#each page1Data.events as event}
           {@const eventName = event.name}
           {@const eventTime = event.time}
-          <div class="row">
+          <div class:row={!matches} class:row-mobile={matches}>
             <div class="row-start">
               {#each eventName as char}
                 <span class="row-item">{char}</span>
@@ -76,11 +76,14 @@
   .container {
     position: absolute;
     width: 90%;
-    height: 100%;
+    height: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-self: center;
     align-items: center;
+  }
+  .container-mobile {
+    width: 290px;
   }
 
   /* Title */
@@ -97,6 +100,12 @@
   /* Schedule content and monospace rows */
   .content {
     width: 100%;
+    overflow-y: scroll;
+    font-family: monospace;
+    font-size: x-large;
+  }
+  .content-mobile {
+    font-size: small;
   }
   .row {
     display: flex;
@@ -104,8 +113,9 @@
     justify-content: space-between;
     width: 100%;
     margin: 0.5rem 0;
-    font-family: monospace;
-    font-size: x-large;
+  }
+  .row-mobile {
+    margin: 0.5rem 0;
   }
   .row-item {
     margin: 0 1px;
