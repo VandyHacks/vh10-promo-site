@@ -36,8 +36,8 @@
 
   <!-- light bulbs -->
   <div class="bulb-container" class:bulb-container-mobile={matches}>
-    <LightBulb bind:currentPage pageNum="1" />
-    <LightBulb bind:currentPage pageNum="2" />
+    <LightBulb bind:currentPage pageNum="1" date={page1Data.date} />
+    <LightBulb bind:currentPage pageNum="2" date={page2Data.date} />
   </div>
 </MediaQuery>
 
@@ -50,6 +50,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    pointer-events: none;
   }
 
   .title {
@@ -74,7 +75,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    z-index: -1;
   }
   .bulb-container-mobile {
     width: 40%;
