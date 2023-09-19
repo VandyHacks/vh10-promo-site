@@ -1,0 +1,62 @@
+[
+  {
+    "day": "1",
+    "date": "Oct 28",
+    "events": [
+      {
+        "name": "Registration",
+        "time": "8:00 AM - 9:00 AM"
+      },
+      {
+        "name": "Opening Ceremony",
+        "time": "9:00 AM - 9:30 AM"
+      },
+      {
+        "name": "Keynote",
+        "time": "9:30 AM - 10:30 AM"
+      },
+      {
+        "name": "Hacking Begins",
+        "time": "10:30 AM"
+      },
+      {
+        "name": "Lunch",
+        "time": "12:00 PM - 1:00 PM"
+      },
+      {
+        "name": "Workshop: Intro to Git",
+        "time": "1:00 PM - 2:00 PM"
+      }
+    ]
+  },
+  {
+    "day": "2",
+    "date": "Oct 29",
+    "events": [
+      {
+        "name": "Judging",
+        "time": "8:00 AM - 9:00 AM"
+      },
+      {
+        "name": "Somethign else",
+        "time": "9:00 AM - 9:30 AM"
+      },
+      {
+        "name": "Workshop ABCCCC",
+        "time": "9:30 AM - 10:30 AM"
+      },
+      {
+        "name": "More Workshopee",
+        "time": "10:30 AM"
+      },
+      {
+        "name": "Sleep",
+        "time": "12:00 PM - 1:00 PM"
+      },
+      {
+        "name": "Go Home",
+        "time": "1:00 PM - 2:00 PM"
+      }
+    ]
+  }
+]

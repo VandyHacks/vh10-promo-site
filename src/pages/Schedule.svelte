@@ -2,7 +2,6 @@
   import CloudLeft from "../components/schedule/cloud-left.svelte";
   import CloudRight from "../components/schedule/cloud-right.svelte";
   import Billboard from "../components/schedule/billboard.svelte";
-  import LightBulb from "../components/schedule/light-bulb.svelte";
 
   let currentPage = 1;
 </script>
@@ -19,12 +18,7 @@
   <!-- billboard -->
   <div class="center">
     <div class="billboard">
-      <Billboard />
-
-      <div class="bulb-container">
-        <LightBulb bind:currentPage pageNum="1" />
-        <LightBulb bind:currentPage pageNum="2" />
-      </div>
+      <Billboard bind:currentPage />
     </div>
   </div>
 </div>
@@ -73,19 +67,5 @@
 
     /* for development purpose */
     /* background-color: teal; */
-  }
-  .bulb-container {
-    position: absolute;
-    width: 20%;
-    height: 17%;
-    right: 5%;
-    top: -12%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    z-index: -1;
-
-    /* for development purpose */
-    /* background-color: greenyellow; */
   }
 </style>
