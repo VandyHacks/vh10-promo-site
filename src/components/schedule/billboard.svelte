@@ -10,6 +10,9 @@
 
   let page1Data = schedule[0];
   let page2Data = schedule[1];
+
+  // TODO: remove this when schedule is ready
+  const SCHEDULE_NOT_READY = true;
 </script>
 
 <MediaQuery query="(max-width: 768px)" let:matches>
@@ -24,7 +27,9 @@
     <div class="title" class:title-mobile={matches}>Schedule</div>
 
     <div class="content" class:content-mobile={matches}>
-      {#if currentPage == 1}
+      {#if SCHEDULE_NOT_READY}
+        <div class="coming-soon">COMING SOON</div>
+      {:else if currentPage == 1}
         <!-- TODO: render page 1 content here -->
         {#each page1Data.events as event}
           {@const eventName = event.name}
@@ -140,5 +145,15 @@
     height: 17%;
     right: auto;
     top: -8%;
+  }
+  .coming-soon {
+    font-size: 3rem;
+    font-weight: 500;
+    color: rgb(211, 211, 211);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
 </style>
