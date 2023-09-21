@@ -37,6 +37,8 @@
     position: relative;
     width: 100vw;
     height: 150vh;
+    /* todo: figure out a better way to do this, 
+    this creates a weird gap between sections in mobile */
   }
   .container-mobile {
     height: 60vh;
@@ -80,7 +82,7 @@
     z-index: 4;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 865px) {
     .scene {
       display: none;
     }

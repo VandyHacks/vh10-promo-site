@@ -83,7 +83,7 @@
     text-shadow: 0 0 20px rgba(255, 56, 131, 1);
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 865px) {
     #footerApartment {
       display: none;
     }
