@@ -8,20 +8,13 @@
   import Footer from "./pages/Footer.svelte";
 </script>
 
-<div class="all">
-  <Home />
-  <About />
-  <Schedule />
-  <Speaker />
-  <FAQ />
-  <Sponsors />
-  <Footer />
-</div>
+<Home />
+<About />
+<Schedule />
+<Speaker />
+<FAQ />
+<Sponsors />
+<Footer />
 
 <style lang="postcss" global>
-  .all {
-    display: grid;
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(6, 1fr);
-  }
 </style>
