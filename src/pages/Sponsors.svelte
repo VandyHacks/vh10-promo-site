@@ -101,7 +101,7 @@
   .building2 {
     position: absolute;
     width: 25vw;
-    top: 110vh;
+    top: 90vh;
     z-index: 2;
   }
 
@@ -117,7 +117,7 @@
     position: absolute;
     width: 40vw;
     left: 60vw;
-    top: 120vh;
+    top: 105vh;
     z-index: 3;
   }
 

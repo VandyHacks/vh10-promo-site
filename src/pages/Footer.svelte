@@ -3,10 +3,12 @@
 </script>
 
 <footer>
-  <div id="footerApartment">
-    <FooterApartment />
+  <div id="design">
+    <div id="footerApartment">
+      <FooterApartment />
+    </div>
+    <a id="apply" href="https://apply.vandyhacks.org">Apply Now</a>
   </div>
-  <a id="apply" href="https://apply.vandyhacks.org">Apply Now</a>
   <div class="links">
     <div class="block">
       <a href="">Judge Portal</a>
@@ -23,7 +25,7 @@
       <br /><br />
       <a href="https://github.com/VandyHacks">Github</a>
       <br /><br />
-      <a href="">Discord</a>
+      <a href="https://discord.gg/GVsHeNR9j6">Discord</a>
       <br /><br />
       <a href="https://x.com/vandyhacks?s=21&t=gRhN7Dcc5Ae-f-c2JKc0ig"
         >X (Twitter)</a
@@ -39,12 +41,13 @@
 
 <style>
   footer {
-    width: auto;
+    width: 100vw;
     height: 500px;
     background-color: #0e0e1a;
     text-align: left;
     font-size: 20px;
     position: relative;
+    bottom: 0px;
   }
   a {
     color: white;
@@ -57,7 +60,8 @@
   }
   .block {
     margin-top: 45px;
-    width: 345px;
+    width: 10vw;
+    padding: 5vw;
     color: white;
   }
   #footerApartment {
@@ -65,6 +69,7 @@
     display: inline-block;
     top: 30px;
   }
+
   #apply {
     background-color: #1d1743;
     top: 180px;
@@ -73,7 +78,17 @@
     position: relative;
     border-radius: 10px;
   }
+
   #apply:hover {
     text-shadow: 0 0 20px rgba(255, 56, 131, 1);
+  }
+
+  @media (max-width: 768px) {
+    #footerApartment {
+      display: none;
+    }
+    #apply {
+      display: none;
+    }
   }
 </style>
