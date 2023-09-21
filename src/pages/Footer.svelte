@@ -11,7 +11,7 @@
   </div>
   <div class="links">
     <div class="block">
-      <a href=https://apply.vandyhacks.org/">Judge Portal</a>
+      <a href="https://apply.vandyhacks.org/">Judge Portal</a>
       <br /><br />
       <a href="https://www.asurion.com/">Asurion</a>
       <br /><br />
