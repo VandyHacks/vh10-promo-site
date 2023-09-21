@@ -1,7 +1,7 @@
 <script>
 	import AboutLeftMountains from "../components/aboutLeftMountains.svelte";
 	import AboutRightMountains from "../components/aboutRightMountains.svelte";
-	import AboutMountain_1 from "../components/about_mountain_1.svelte";
+	import AboutMountain_1 from "../components/about/about_mountain_1.svelte";
 </script>
 
 <div style="position: relative; display: flex; justify-content: space-around;">

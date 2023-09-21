@@ -1,10 +1,10 @@
 <script>
 	import AboutLeftMountains from "../components/aboutLeftMountains.svelte";
 	import AboutRightMountains from "../components/aboutRightMountains.svelte";
-	import AboutMountain_1 from "../components/about_mountain_1.svelte";
+	import AboutMountain_1 from "../components/about/about_mountain_1.svelte";
 </script>
 
-<div style="position: relative;">
+<div style="position: relative; margin-bottom: 150px;">
 	<div class="text-container">
 		<div class="text-center">
 			<div class="about_title">About VH X</div>
