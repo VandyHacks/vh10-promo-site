@@ -2,7 +2,7 @@
   import AboutMountain_1 from "../components/about/about_mountain_1.svelte";
 </script>
 
-<div style="position: relative; display: flex; justify-content: space-around;">
+<div class="container">
   <div class="text-container">
     <div class="about_title">About VH X</div>
     <div class="about_desc">
@@ -33,9 +33,18 @@
 </div>
 
 <style>
+  .container {
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+  }
   .text-container {
-    flex: 1;
-    max-width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 20px;
   }
 
@@ -47,7 +56,6 @@
     font-size: 3em;
     font-weight: 700;
     position: relative;
-    top: -2em;
     font: Inter;
     z-index: 4;
   }
@@ -84,8 +92,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
-
   .miniature-container {
     margin-top: 50px;
     display: flex;

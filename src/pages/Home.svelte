@@ -10,7 +10,7 @@
 
 <MLHBadge />
 
-<div style="height: 990px">
+<div class="container">
   <div>
     <div class="logo">
       <VHlogo />
@@ -50,6 +50,12 @@
 </div>
 
 <style>
+  .container {
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
   .logo {
     display: flex;
     justify-content: center;

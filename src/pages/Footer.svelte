@@ -11,9 +11,10 @@
     <div class="block">
       <a href="">Judge Portal</a>
       <br /><br />
+      <!-- TODO: We might not need to add in footer? -->
       <a href="https://www.asurion.com/">Asurion</a>
       <br /><br />
-      <a href="">Crossyear</a>
+      <a href="https://xy.vandyhacks.org/">Crossyear</a>
     </div>
     <div class="block">
       <a href="https://www.instagram.com/vandyhacks/">Instagram</a>

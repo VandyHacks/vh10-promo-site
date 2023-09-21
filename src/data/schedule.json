@@ -1,0 +1,138 @@
+[
+  {
+    "day": "1",
+    "date": "Oct 28",
+    "events": [
+      {
+        "name": "Registration",
+        "time": "8AM-9AM"
+      },
+      {
+        "name": "Opening Ceremony",
+        "time": "9AM-9:30AM"
+      },
+      {
+        "name": "Keynote",
+        "time": "9:30AM-10:30AM"
+      },
+      {
+        "name": "Hacking Begins",
+        "time": "10:30AM"
+      },
+      {
+        "name": "Lunch",
+        "time": "12PM-1PM"
+      },
+      {
+        "name": "Workshop: Intro to Git",
+        "time": "1PM-2PM"
+      },
+      {
+        "name": "Workshop: Intro to Git",
+        "time": "1PM-2PM"
+      },
+      {
+        "name": "Workshop: Intro to Git",
+        "time": "1PM-2PM"
+      },
+      {
+        "name": "Workshop: Intro to Git",
+        "time": "1PM-2PM"
+      },
+      {
+        "name": "Workshop: Intro to Git",
+        "time": "1PM-2PM"
+      },
+      {
+        "name": "Workshop: Intro to Git",
+        "time": "1PM-2PM"
+      },
+      {
+        "name": "Workshop: Intro to Git",
+        "time": "1PM-2PM"
+      },
+      {
+        "name": "Workshop: Intro to Git",
+        "time": "1PM-2PM"
+      },
+      {
+        "name": "Workshop: Intro to Git",
+        "time": "1PM-2PM"
+      }
+    ]
+  },
+  {
+    "day": "2",
+    "date": "Oct 29",
+    "events": [
+      {
+        "name": "Judging",
+        "time": "8AM-9AM"
+      },
+      {
+        "name": "Somethign else",
+        "time": "9AM-9:30AM"
+      },
+      {
+        "name": "Workshop ABCCCC",
+        "time": "9:30AM-10:30AM"
+      },
+      {
+        "name": "More Workshopee",
+        "time": "10:30AM"
+      },
+      {
+        "name": "Sleep",
+        "time": "12PM-1PM"
+      },
+      {
+        "name": "Go Home",
+        "time": "1PM-2PM"
+      },
+      {
+        "name": "Go Home",
+        "time": "1PM-2PM"
+      },
+      {
+        "name": "Go Home",
+        "time": "1PM-2PM"
+      },
+      {
+        "name": "Go Home",
+        "time": "1PM-2PM"
+      },
+      {
+        "name": "Go Home",
+        "time": "1PM-2PM"
+      },
+      {
+        "name": "Go Home",
+        "time": "1PM-2PM"
+      },
+      {
+        "name": "Go Home",
+        "time": "1PM-2PM"
+      },
+      {
+        "name": "Go Home",
+        "time": "1PM-2PM"
+      },
+      {
+        "name": "Go Home",
+        "time": "1PM-2PM"
+      },
+      {
+        "name": "Go Home",
+        "time": "1PM-2PM"
+      },
+      {
+        "name": "Go Home",
+        "time": "1PM-2PM"
+      },
+      {
+        "name": "Go Home",
+        "time": "1PM-2PM"
+      }
+    ]
+  }
+]
