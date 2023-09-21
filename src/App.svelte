@@ -4,6 +4,7 @@
   import Schedule from "./pages/Schedule.svelte";
   import Speaker from "./pages/Speaker.svelte";
   import FAQ from "./pages/FAQ.svelte";
+  import Sponsors from "./pages/Sponsors.svelte";
 </script>
 
 <div class="all">
@@ -12,6 +13,7 @@
   <Schedule />
   <Speaker />
   <FAQ />
+  <Sponsors />
 </div>
 
 <style lang="postcss" global>
