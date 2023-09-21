@@ -8,10 +8,11 @@
   import Sponsor2 from "../components/sponsors/sponsor2.svelte";
 </script>
 
-<div style="position: relative;">
+<div class="container">
   <!-- <div class="sponsorsHeader">Sponsors</div> -->
 
   <div class="sponsor1">
+    <!-- TODO: split the title "Sponsors" from our actual sponsor -->
     <Sponsor1 />
   </div>
 
@@ -41,6 +42,12 @@
 </div>
 
 <style>
+  .container {
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: 170vh;
+  }
   /* .sponsorsHeader {
     text-shadow: 0 0 7px #fff;
     color: white;
