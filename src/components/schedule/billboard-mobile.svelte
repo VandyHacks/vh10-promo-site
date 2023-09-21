@@ -1,0 +1,60 @@
+<svg
+  preserveAspectRatio="none"
+  viewBox="0 0 390 540"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <rect
+    x="42"
+    y="42.4443"
+    width="306.111"
+    height="455.556"
+    rx="49"
+    fill="#FFF5EA"
+  />
+  <g filter="url(#filter0_f_551_1748)">
+    <rect
+      x="42"
+      y="42.4443"
+      width="306.111"
+      height="455.556"
+      rx="49"
+      stroke="#FEAC18"
+      stroke-width="24"
+    />
+  </g>
+  <rect
+    x="42"
+    y="42.4443"
+    width="306.111"
+    height="455.556"
+    rx="49"
+    stroke="white"
+    stroke-width="14"
+    stroke-linecap="round"
+    stroke-dasharray="1 26"
+  />
+  <defs>
+    <filter
+      id="filter0_f_551_1748"
+      x="0"
+      y="0.444336"
+      width="390.111"
+      height="539.556"
+      filterUnits="userSpaceOnUse"
+      color-interpolation-filters="sRGB"
+    >
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feBlend
+        mode="normal"
+        in="SourceGraphic"
+        in2="BackgroundImageFix"
+        result="shape"
+      />
+      <feGaussianBlur
+        stdDeviation="15"
+        result="effect1_foregroundBlur_551_1748"
+      />
+    </filter>
+  </defs>
+</svg>
