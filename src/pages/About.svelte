@@ -40,20 +40,23 @@
   }
 
   .about_title {
-    color: #fff;
-    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.73);
-    font-family: Inter;
-    font-size: 80px;
-    font-style: normal;
+    display: flex;
+    justify-content: left;
+    text-shadow: 0 0 7px #fff;
+    color: white;
+    font-size: 3em;
     font-weight: 700;
-    line-height: normal;
+    position: relative;
+    top: -2em;
+    font: Inter;
+    z-index: 4;
   }
   .about_desc {
-    width: 504px;
+    width: 40vw;
     color: white;
-    font-size: 20px;
-    font-family: Inter;
-    font-weight: 400;
+    font: Inter;
+    font-size: 1.5em;
+    font-weight: 200;
     word-wrap: break-word;
   }
 

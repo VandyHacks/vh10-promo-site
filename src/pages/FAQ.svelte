@@ -19,7 +19,6 @@
     font-size: 3em;
     font-weight: 700;
     position: relative;
-    /* top: -10em; */
     left: 1em;
     font: Inter;
     z-index: 4;
@@ -30,7 +29,6 @@
     display: flex;
     justify-content: center;
     position: relative;
-    /* top: -45em; */
     z-index: 4;
   }
 </style>

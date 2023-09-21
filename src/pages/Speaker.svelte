@@ -38,6 +38,9 @@
   .text {
     width: 40%;
     float: right;
+    font: Inter;
+    font-size: 1.5em;
+    font-weight: 200;
     padding-right: 7vw;
     z-index: 4;
   }
