@@ -1,28 +1,59 @@
 <script>
+  import MediaQuery from "../MediaQuery.svelte";
+
+  import MountainLeft from "../components/schedule/mountain-left.svelte";
+  import MountainRight from "../components/schedule/mountain-right.svelte";
   import Billboard from "../components/schedule/billboard.svelte";
-  import LightBulb from "../components/schedule/light-bulb.svelte";
-  import Scene from "../components/schedule/scene.svelte";
+  import BuildingLeft from "../components/schedule/building-left.svelte";
+  import BuildingRight from "../components/schedule/building-right.svelte";
+  import BuildingBottom from "../components/schedule/building-bottom.svelte";
+  import BuildingTop from "../components/schedule/building-top.svelte";
+  import RoadTop from "../components/schedule/road-top.svelte";
+  import MountainMobile from "../components/schedule/mountain-mobile.svelte";
 
   let currentPage = 1;
 </script>
 
-<div class="container">
-  <div class="scene" style="position:absolute;">
-    <Scene />
-  </div>
+<MediaQuery query="(max-width: 768px)" let:matches>
+  <div class="container">
+    {#if !matches}
+      <!-- desktop background -->
+      <div class="mountain-left">
+        <MountainLeft />
+      </div>
+      <div class="mountain-right">
+        <MountainRight />
+      </div>
+      <div class="road-top">
+        <RoadTop />
+      </div>
+      <div class="building-left">
+        <BuildingLeft />
+      </div>
+      <div class="building-right">
+        <BuildingRight />
+      </div>
+      <div class="building-bottom">
+        <BuildingBottom />
+      </div>
+      <div class="building-top">
+        <BuildingTop />
+      </div>
+    {:else}
+      <!-- mobile background -->
+      <div class="mountain-mobile">
+        <MountainMobile />
+      </div>
+    {/if}
 
-  <!-- billboard -->
-  <div class="center">
-    <div class="billboard">
-      <Billboard />
-
-      <div class="bulb-container">
-        <LightBulb bind:currentPage pageNum="1" />
-        <LightBulb bind:currentPage pageNum="2" />
+    <!-- billboard -->
+    <div class="center">
+      <div class="billboard">
+        <Billboard bind:currentPage />
       </div>
     </div>
   </div>
-</div>
+</MediaQuery>
 
 <style>
   .container {
@@ -30,13 +61,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    margin-bottom: 20em;
-
-    /* for development purpose */
-    background-color: #140f2e;
-    border: 1px solid black;
   }
-
   .center {
     position: absolute;
     width: 100vw;
@@ -44,13 +69,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 4;
+    z-index: 2;
   }
   .billboard {
     position: relative;
     margin: 0 auto;
     display: flex;
-    width: 90vw;
+    width: 900px;
     height: 600px;
     object-fit: fill;
     justify-content: center;
@@ -58,31 +83,57 @@
     /* for development purpose */
     /* background-color: teal; */
   }
-  .bulb-container {
+  .road-top {
     position: absolute;
-    width: 20%;
-    height: 17%;
-    right: 5%;
-    top: -12%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    z-index: 3;
-
-    /* for development purpose */
-    /* background-color: greenyellow; */
+    width: 110vw;
+    bottom: 0px;
+    height: 79vh;
+    z-index: 1;
+    left: -5vw;
   }
-
-  .scene {
-    width: 100%;
+  .mountain-left {
+    position: absolute;
+    width: 50vw;
+    left: 0px;
+    z-index: 1;
+  }
+  .mountain-right {
+    position: absolute;
+    width: 10vw;
+    right: 0px;
+    z-index: 1;
+  }
+  .mountain-mobile {
+    position: absolute;
+    width: 100vw;
+  }
+  .building-left {
+    position: absolute;
+    width: 15vw;
+    left: 0px;
+    top: 25vh;
     z-index: 2;
-    position: absolute;
-    top: -15em;
   }
-
-  @media (max-width: 450px) {
-    .scene {
-      display: none;
-    }
+  .building-right {
+    position: absolute;
+    width: 50vw;
+    right: 0px;
+    top: 25vh;
+    z-index: 2;
+  }
+  .building-bottom {
+    position: absolute;
+    width: 100vw;
+    bottom: -10vh;
+    z-index: 1;
+    right: 3;
+  }
+  .building-top {
+    position: absolute;
+    width: 90vw;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-45%) translateY(-40%);
+    z-index: 1;
   }
 </style>
