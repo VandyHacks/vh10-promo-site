@@ -14,13 +14,8 @@
 
       <div class="text">
         <div class="title">Speaker Series</div>
-        <div class="name">Co-President Alex Oh</div>
-        <div>
-          Alex Oh is a junior at Vanderbilt University and is a really cool
-          dude. Like a really cool dude. He is also one of the Co-Presidents of
-          VandyHacks X. This is another sentence talking about how awesome he
-          is.
-        </div>
+        <div class="name">Someone super cool</div>
+        <div>Coming soon!</div>
         <!-- implement logic for changing names and description -->
       </div>
     </div>
@@ -36,9 +31,6 @@
     display: block;
     position: relative;
     width: 100vw;
-    height: 150vh;
-    /* todo: figure out a better way to do this, 
-    this creates a weird gap between sections in mobile */
   }
   .container-mobile {
     height: 60vh;
@@ -69,15 +61,17 @@
     text-shadow: 0 0 7px #fff;
     font-size: 2.5em;
     font-weight: 700;
+    margin-bottom: 1vh;
   }
 
   .name {
     font-size: 1.4em;
     font-weight: 700;
+    margin-bottom: 1vh;
   }
 
   .scene {
-    position: absolute;
+    height: 50%;
     width: 100%;
     z-index: 4;
   }
