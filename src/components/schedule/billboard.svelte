@@ -106,7 +106,7 @@
   .content {
     width: 100%;
     overflow-y: scroll;
-    font-family: monospace;
+    font-family: Inter;
     font-size: x-large;
   }
   .content-mobile {
