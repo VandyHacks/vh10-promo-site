@@ -1,4 +1,5 @@
 <script>
+  import MediaQuery from "../MediaQuery.svelte";
   import { link } from "svelte-routing";
 
   import Sponsor1 from "../components/sponsors/sponsor1.svelte";
@@ -11,82 +12,108 @@
   import Footer from "./Footer.svelte";
 </script>
 
-<div class="container">
-  <!-- back button -->
-  <a href="/" use:link>
-    <div class="button">Back</div>
-  </a>
-
-  <!-- Asurion page -->
-  <div class="asurion-container">
-    <!-- Asurion logo -->
-    <div class="asurion-logo">
-      <Sponsor1 />
-    </div>
-
-    <!-- About asurion -->
-    <div class="title-text">
-      <div class="title">About Asurion</div>
-      <div class="text">
-        Asurion helps more than 350 million people around the world unlock their
-        technology's untapped potential. We create innovative technology
-        solutions that help keep consumers connected, from comprehensive
-        protection to smart tech help that redefines expertise. Partnering with
-        leading wireless carriers, retailers and pay-tv providers, Asurion's
-        22,000 employees and counting, deliver a seamless, award-winning
-        customer experience, anticipating their needs and providing tailored
-        services reachable within one touch.
-      </div>
-    </div>
-
-    <!-- Build your career -->
-    <div class="title-text">
-      <div class="title">Build your career at Asurion</div>
-      <div class="text">
-        <div>For 2024 summer internships, we are looking for:</div>
-        <!-- list the internships -->
-        <div class="list">
-          <div>&gt; Software Engineer</div>
-          <div>&gt; DevOps Engineer</div>
-          <div>&gt; UX Design</div>
-          <div>&gt; Data Science (Master's/PhD level)</div>
-          <div>&gt; Accounting/Audit</div>
-          <div>&gt; Financial Planning & Analysis</div>
-          <div>&gt; Secrutiy & Risk</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Apply now -->
-    <a href="https://careers.asurion.com/us/en" target="_blank">
-      <div class="button apply-now">Apply Now!</div>
+<MediaQuery query="(max-width: 865px)" let:matches>
+  <div class="container">
+    <!-- back button -->
+    <a href="/" use:link>
+      <div class="button">Back</div>
     </a>
 
-    <!-- Duck stickers -->
-  </div>
+    <!-- Asurion page -->
+    <div class="asurion-container">
+      <!-- Asurion logo -->
+      <div class="asurion-logo">
+        <Sponsor1 />
+      </div>
 
-  <!-- Background Cloud -->
-  <div class="firstCloud">
-    <FirstCloud />
-  </div>
+      <!-- About asurion -->
+      <div class="title-text">
+        <div class="title">About Asurion</div>
+        <div class="text">
+          Asurion helps more than 350 million people around the world unlock
+          their technology's untapped potential. We create innovative technology
+          solutions that help keep consumers connected, from comprehensive
+          protection to smart tech help that redefines expertise. Partnering
+          with leading wireless carriers, retailers and pay-tv providers,
+          Asurion's 22,000 employees and counting, deliver a seamless,
+          award-winning customer experience, anticipating their needs and
+          providing tailored services reachable within one touch.
+        </div>
+      </div>
 
-  <div class="secondCloud">
-    <SecondCloud />
-  </div>
+      <!-- Build your career -->
+      <div class="title-text">
+        <div class="title">Build your career at Asurion</div>
+        <div class="text">
+          <div>For 2024 summer internships, we are looking for:</div>
+          <!-- list the internships -->
+          <div class="list">
+            <div>&gt; Software Engineer</div>
+            <div>&gt; DevOps Engineer</div>
+            <div>&gt; UX Design</div>
+            <div>&gt; Data Science (Master's/PhD level)</div>
+            <div>&gt; Accounting/Audit</div>
+            <div>&gt; Financial Planning & Analysis</div>
+            <div>&gt; Secrutiy & Risk</div>
+          </div>
+        </div>
+      </div>
 
-  <div class="thirdCloud">
-    <ThirdCloud />
-  </div>
+      <!-- Apply now -->
+      <a href="https://careers.asurion.com/us/en" target="_blank">
+        <div class="button apply-now">Apply Now!</div>
+      </a>
 
-  <div class="fourthCloud">
-    <FourthCloud />
-  </div>
+      <!-- Duck stickers -->
+      <img
+        src="/img/duck1.png"
+        alt="duck"
+        class="duck duck-1"
+        class:duck-mobile={matches}
+      />
+      <img
+        src="/img/duck2.png"
+        alt="duck"
+        class="duck duck-2"
+        class:duck-mobile={matches}
+      />
+      <img
+        src="/img/duck3.png"
+        alt="duck"
+        class="duck duck-3"
+        class:duck-mobile={matches}
+      />
+      <img
+        src="/img/duck4.png"
+        alt="duck"
+        class="duck duck-4"
+        class:duck-mobile={matches}
+      />
+    </div>
 
-  <div class="fifthCloud">
-    <FifthCloud />
+    <!-- Background Cloud -->
+    <div class="firstCloud">
+      <FirstCloud />
+    </div>
+
+    <div class="secondCloud">
+      <SecondCloud />
+    </div>
+
+    <div class="thirdCloud">
+      <ThirdCloud />
+    </div>
+
+    <div class="fourthCloud">
+      <FourthCloud />
+    </div>
+
+    <div class="fifthCloud">
+      <FifthCloud />
+    </div>
   </div>
-</div>
-<Footer />
+  <Footer />
+</MediaQuery>
 
 <style>
   .container {
@@ -152,6 +179,32 @@
   }
   .button:hover {
     cursor: pointer;
+  }
+
+  /* Ducks */
+  .duck {
+    position: absolute;
+    width: 150px;
+  }
+  .duck-1 {
+    top: 10px;
+    left: calc(75px + 60%);
+  }
+  .duck-2 {
+    right: -50px;
+    bottom: 10%;
+  }
+  .duck-3 {
+    bottom: 5%;
+    left: 70%;
+  }
+  .duck-4 {
+    bottom: 30%;
+    left: 60%;
+  }
+  .duck-mobile {
+    width: 50px;
+    right: 0;
   }
 
   /* Background cloud */
