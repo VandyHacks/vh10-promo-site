@@ -9,7 +9,6 @@
   import ThirdCloud from "../components/home/thirdCloud.svelte";
   import FourthCloud from "../components/home/fourthCloud.svelte";
   import FifthCloud from "../components/home/fifthCloud.svelte";
-  import Footer from "./Footer.svelte";
 </script>
 
 <MediaQuery query="(max-width: 865px)" let:matches>
@@ -112,7 +111,6 @@
       <FifthCloud />
     </div>
   </div>
-  <Footer />
 </MediaQuery>
 
 <style>
