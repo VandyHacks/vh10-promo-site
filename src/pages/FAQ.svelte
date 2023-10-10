@@ -8,7 +8,6 @@
 
 <div class="container">
   <div class="title">FAQ</div>
-
   <div class="boards">
     <Boards />
   </div>
