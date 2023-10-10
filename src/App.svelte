@@ -8,6 +8,7 @@
 <Router>
   <Route path="/" component={Main} />
   <Route path="/asurion" component={Asurion} />
+  <Route path="*" component={Main} />
 </Router>
 
 <style lang="postcss" global>
