@@ -11,7 +11,7 @@
   import FifthCloud from "../components/home/fifthCloud.svelte";
 </script>
 
-<MediaQuery query="(max-width: 865px)" let:matches>
+<MediaQuery query="(max-width: 768px)" let:matches>
   <div class="container">
     <!-- back button -->
     <a href="/" use:link>

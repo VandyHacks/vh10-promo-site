@@ -4,7 +4,7 @@
   import AboutMobile from "./About-Mobile.svelte";
 </script>
 
-<MediaQuery query="(max-width: 1300px)" let:matches>
+<MediaQuery query="(max-width: 768px)" let:matches>
   {#if matches}
     <AboutMobile />
   {:else}

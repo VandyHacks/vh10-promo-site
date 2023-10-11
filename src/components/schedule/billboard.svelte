@@ -15,7 +15,7 @@
   const SCHEDULE_NOT_READY = true;
 </script>
 
-<MediaQuery query="(max-width: 865px)" let:matches>
+<MediaQuery query="(max-width: 768px)" let:matches>
   {#if matches}
     <BillboardMobile />
   {:else}

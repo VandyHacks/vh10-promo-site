@@ -20,7 +20,7 @@
   import Sponsor11 from "../components/sponsors/sponsor11.svelte";
 </script>
 
-<MediaQuery query="(max-width: 865px)" let:matches>
+<MediaQuery query="(max-width: 768px)" let:matches>
   <div class="container">
     <div class="sponsorsHeader">Sponsors</div>
 
