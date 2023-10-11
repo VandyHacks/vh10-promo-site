@@ -1,4 +1,6 @@
 <script>
+  import MediaQuery from "../MediaQuery.svelte";
+
   import Tree1 from "../components/sponsors/tree1.svelte";
   import Tree2 from "../components/sponsors/tree2.svelte";
   import Tree3 from "../components/sponsors/tree3.svelte";
@@ -18,49 +20,115 @@
   import Sponsor11 from "../components/sponsors/sponsor11.svelte";
 </script>
 
-<div class="container">
-  <div class="sponsorsHeader">Sponsors</div>
+<MediaQuery query="(max-width: 865px)" let:matches>
+  <div class="container">
+    <div class="sponsorsHeader">Sponsors</div>
 
-  <!-- Include with asurion page: <div class="glowingArrow"><GlowingArrow /></div> -->
+    <div class="sponsorsList" class:sponsorsListMobile={matches}>
+      <!-- Asurion -->
+      <a class="asurion" href="/asurion" target="_blank">
+        <Sponsor1 />
+        <div class="glowingArrow">
+          <GlowingArrow />
+        </div>
+      </a>
 
-  <div class="sponsorsList">
-    <div class="sponsor"><Sponsor1 /></div>
-    <div class="sponsor"><Sponsor2 /></div>
-    <div class="sponsor"><Sponsor3 /></div>
-    <div class="sponsorHorizontal">
-      <div class="sponsor"><Sponsor4 /></div>
-      <div class="sponsor"><Sponsor10 /></div>
+      <!-- Iron Galaxy Studios -->
+      <div>
+        <a href="https://www.irongalaxystudios.com/" target="_blank">
+          <Sponsor2 />
+        </a>
+      </div>
+
+      <!-- Google Cloud -->
+      <div>
+        <a href="https://cloud.google.com/" target="_blank">
+          <Sponsor3 />
+        </a>
+      </div>
+
+      <div class="sponsorHorizontal">
+        <!-- Echo 3D -->
+        <div>
+          <a href="https://www.echo3d.com/" target="_blank">
+            <Sponsor4 />
+          </a>
+        </div>
+
+        <!-- VU ISIS -->
+        <div>
+          <a href="https://www.isis.vanderbilt.edu/" target="_blank">
+            <Sponsor10 /></a
+          >
+        </div>
+      </div>
+
+      <!-- Desmos -->
+      <div>
+        <a href="https://www.desmos.com/" target="_blank">
+          <Sponsor5 />
+        </a>
+      </div>
+
+      <!-- CareYaya -->
+      <div>
+        <a href="https://www.careyaya.org/" target="_blank">
+          <Sponsor6 />
+        </a>
+      </div>
+
+      <!-- L3Harris -->
+      <div>
+        <a href="https://www.l3harris.com/" target="_blank">
+          <Sponsor8 />
+        </a>
+      </div>
+
+      <div class="sponsorHorizontal">
+        <!-- Red Bull -->
+        <div>
+          <a href="https://www.redbull.com/" target="_blank">
+            <Sponsor7 />
+          </a>
+        </div>
+
+        <!-- Patient Safety -->
+        <div>
+          <a href="https://www.patientsafetytech.com/" target="_blank">
+            <Sponsor11 />
+          </a>
+        </div>
+      </div>
+
+      <!-- Qiskit -->
+      <div>
+        <a href="https://qiskit.org/events/fall-fest" target="_blank">
+          <Sponsor9 />
+        </a>
+      </div>
     </div>
-    <div class="sponsor"><Sponsor5 /></div>
-    <div class="sponsor"><Sponsor6 /></div>
-    <div class="sponsor"><Sponsor8 /></div>
-    <div class="sponsorHorizontal">
-      <div class="sponsor"><Sponsor7 /></div>
-      <div class="sponsor"><Sponsor11 /></div>
+
+    <div class="building1">
+      <Building1 />
     </div>
-    <div class="sponsor"><Sponsor9 /></div>
-  </div>
 
-  <div class="building1">
-    <Building1 />
-  </div>
+    <div class="building2">
+      <Building2 />
+    </div>
 
-  <div class="building2">
-    <Building2 />
-  </div>
+    <div class="tree3">
+      <Tree3 />
+    </div>
 
-  <div class="tree3">
-    <Tree3 />
-  </div>
+    <div class="tree1">
+      <Tree1 />
+    </div>
 
-  <div class="tree1">
-    <Tree1 />
+    <div class="tree2">
+      <Tree2 />
+    </div>
   </div>
-
-  <div class="tree2">
-    <Tree2 />
-  </div>
-</div>
+</MediaQuery>
 
 <style>
   .container {
@@ -84,17 +152,27 @@
   .sponsorsList {
     position: absolute;
     text-align: center;
-    z-index: 1;
+    z-index: 2;
     margin-top: 50vh;
     width: 30vw;
     left: 35vw;
   }
 
   .sponsorsList > * {
-    z-index: 1;
+    z-index: 2;
     width: 30vw;
     margin-top: 5vh;
     stroke: none;
+  }
+
+  .sponsorsList:hover > *:not(.sponsorHorizontal),
+  .sponsorHorizontal:hover > * {
+    cursor: pointer;
+  }
+  .sponsorsListMobile,
+  .sponsorsListMobile > * {
+    width: 50vw;
+    left: 25vw;
   }
 
   .sponsorHorizontal {
@@ -127,7 +205,7 @@
     width: 60vw;
     left: -15vw;
     top: 10vh;
-    z-index: 3;
+    z-index: 1;
   }
 
   .tree2 {
@@ -135,7 +213,7 @@
     width: 40vw;
     left: 65vw;
     top: 150vh;
-    z-index: 3;
+    z-index: 1;
   }
 
   .tree3 {
@@ -143,6 +221,19 @@
     width: 20vw;
     left: 80vw;
     top: 2vh;
-    z-index: 3;
+    z-index: 1;
+  }
+  .asurion {
+    width: 30vw;
+    height: 100%;
+  }
+  .asurion:hover {
+    cursor: pointer;
+  }
+  .glowingArrow {
+    position: absolute;
+    width: 13vw;
+    bottom: 95%;
+    left: 100%;
   }
 </style>
