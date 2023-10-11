@@ -1,23 +1,15 @@
 <script>
-  import Home from "./pages/Home.svelte";
-  import About from "./pages/About.svelte";
-  import Schedule from "./pages/Schedule.svelte";
-  import Speaker from "./pages/Speaker.svelte";
-  import FAQ from "./pages/FAQ.svelte";
-  import Sponsors from "./pages/Sponsors.svelte";
-  import Footer from "./pages/Footer.svelte";
-	import HomeStar from "./pages/HomeStar.svelte";
+  import { Router, Route } from "svelte-routing";
+
+  import Main from "./pages/Main.svelte";
+  import Asurion from "./pages/Asurion.svelte";
 </script>
 
-<!-- <Home /> -->
-<!-- <Star /> -->
-<HomeStar />
-<About />
-<Schedule />
-<Speaker />
-<FAQ />
-<Sponsors />
-<Footer />
+<Router>
+  <Route path="/" component={Main} />
+  <Route path="/asurion" component={Asurion} />
+  <Route path="*" component={Main} />
+</Router>
 
 <style lang="postcss" global>
 </style>
