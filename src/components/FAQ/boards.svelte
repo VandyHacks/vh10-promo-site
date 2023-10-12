@@ -4,6 +4,8 @@
   import Answer from "./answer.svelte";
   import QuestionBoard from "./questionBoard.svelte";
   import MobileFaqBoard from "./MobileFAQBoard.svelte";
+  import DuckFinal from "./duckFinal.svelte";
+  import DuckInitial from "./duckInitial.svelte";
 
   import faq from "../../data/faq.json";
 
@@ -14,11 +16,15 @@
 
   // keep track of expanded state (for mobile only)
   let questionList = new Array(faq.length).fill(false);
-
+  
   // logic for mobile question toggle
+  let icons = new Array(faq.length).fill(DuckInitial);
+
   const toggle = (index) => {
     questionList[index] = !questionList[index];
+    icons[index] = questionList[index] ? DuckFinal : DuckInitial;
   };
+  
 </script>
 
 <MediaQuery query="(max-width: 768px)" let:matches>
@@ -29,15 +35,16 @@
           <MobileFaqBoard />
         </div>
         <div class="qAndA">
-        {#each faq as item, index (item.question)}
+          {#each faq as item, index (item.question)}
           <ol>
             <li>
               <button on:click={() => toggle(index)} class="mobileQuestion">
-                {questionList[index] ? "▼" : "▶"}
+                <svelte:component this={icons[index]} /> 
                 {item.question}
               </button>
               <div class="answerText">
               {#if questionList[index]}
+              <br>
                 {item.answer}
               {/if}
               </div>
@@ -124,8 +131,11 @@
   .answerText {
     padding-left: 10px;
     font-size: 1.3em;
-    
+    text-align: left;
+    width: 80%; 
+    margin-left:45px;
   }
+
 
   button {
       margin: 0;
