@@ -28,6 +28,7 @@
         <div class="boardContainer">
           <MobileFaqBoard />
         </div>
+        <div class="qAndA">
         {#each faq as item, index (item.question)}
           <ol>
             <li>
@@ -35,12 +36,15 @@
                 {questionList[index] ? "▼" : "▶"}
                 {item.question}
               </button>
+              <div class="answerText">
               {#if questionList[index]}
                 {item.answer}
               {/if}
+              </div>
             </li>
           </ol>
         {/each}
+        </div>
       </div>
     {:else}
       <div class="left">
@@ -90,29 +94,55 @@
   }
 
   .mobileBoard {
-    overflow: auto; /* Enable scrolling when content overflows */
-    max-height: 400px; /* Set a maximum height to limit scrolling height */
-  }
-
-  .mobileQuestion {
-    display: flex;
+    position: relative;
     align-items: center;
+    justify-content: center;
+    top: 100px;
+    /* background: green; */
+    width: 100vw;
   }
 
-  ol {
-    margin: 0;
-    padding: 0;
+  .boardContainer {
+    width:90vw;
+    margin: 0 auto;
+    position: relative;
+    align-items: center;
+    justify-content: center;
   }
 
-  li {
-    list-style-type: none;
-    padding: 10px;
-    border-bottom: 1px solid #ddd; /* Add a separator between questions/answers */
+  .qAndA {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70vw;
+    max-height: 70%;
+    overflow: auto;
   }
 
-  /* Style the expanded answer text */
-  p {
-    margin: 0;
-    padding: 10px;
+ 
+  .answerText {
+    padding-left: 10px;
+    font-size: 1.3em;
+    
   }
+
+  button {
+      margin: 0;
+      padding: 0;
+      border: none;
+      background: none;
+      text-shadow: 0 0 7px #fff;
+      color: white;
+      padding-left: 10px;
+      padding-top: 2vh;
+      font-size: 1.5em;
+      text-align: left;
+    }
+
+    ol {
+      margin: 5px;
+      padding: 0;
+      list-style: none;
+    }
 </style>
