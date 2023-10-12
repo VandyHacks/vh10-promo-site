@@ -56,7 +56,7 @@
 
   .text-container {
     flex: 1;
-    padding: 20px;
+    padding: 5%;
   }
 
   .about_title {
@@ -69,7 +69,7 @@
     line-height: normal;
   }
   .about_desc {
-    width: 40vw;
+    width: 70vw;
     color: white;
     font-size: 1.5em;
     font-weight: 200;
@@ -83,7 +83,7 @@
   }
 
   .main-img-container img {
-    width: 550px;
+    width: 70vw;
     object-fit: cover;
     z-index: 0;
   }
@@ -91,9 +91,9 @@
   .mountain1_svg {
     position: absolute;
     z-index: 1;
-    bottom: -25px;
-    width: 200px;
-    left: -85px;
+    bottom: -10vw;
+    width: 25vw;
+    left: -10vw;
   }
 
   .leftmountain_svg {
