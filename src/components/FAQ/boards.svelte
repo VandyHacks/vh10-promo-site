@@ -103,6 +103,8 @@
     width: 40%;
     justify-content: center;
     align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
     /* background-color: lightgreen; */
   }
 
