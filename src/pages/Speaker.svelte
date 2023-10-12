@@ -75,8 +75,10 @@
     /* background-color: teal; */
   }
   .speakercircle {
-    width: 30%;
+    width: 35%;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
     /* float: left; */
     /* padding-left: 7vw; */
   }
