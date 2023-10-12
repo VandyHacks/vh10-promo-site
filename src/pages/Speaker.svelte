@@ -63,7 +63,7 @@
     display: flex;
     /* justify-content: space-around; removed because it's messing with the right/left arrow positioning */
     width: 90%;
-    height: 75vh;
+    height: 100vh;
     margin: 0 auto;
 
     /* background-color: teal; */
@@ -96,6 +96,7 @@
     flex-direction: column;
     /* height: 100%;
     padding-right: 7vw; */
+    align-self: center;
     justify-content: center;
     text-align: justify;
     color: white;
@@ -129,7 +130,7 @@
     text-align: center;
   }
   .description {
-    height: 70%;
+    height: 50%;
     overflow-y: scroll;
   }
 
