@@ -15,16 +15,6 @@
         "In addition to her tech role, Lacie is an educator, serving as a Faculty Instructor at Belmont University's O'More School of Design, where she empowers aspiring designers and marketers. Her journey is punctuated by numerous accolades, including the prestigious Yale School of Management Entrepreneurship Fellowship, the Yale Climate Innovation Grant, and the Visa®️ Digital Creators Program, highlighting her dedication to innovation and sustainability in both fashion and technology.\n",
     },
   ];
-
-  let currentIndex = 0;
-
-  function goPrev() {
-    if (currentIndex > 0) currentIndex--;
-  }
-
-  function goNext() {
-    if (currentIndex < speakers.length - 1) currentIndex++;
-  }
 </script>
 
 <MediaQuery query="(max-width: 768px)" let:matches>
@@ -85,8 +75,10 @@
     /* background-color: teal; */
   }
   .speakercircle {
-    width: 30%;
+    width: 35%;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
     /* float: left; */
     /* padding-left: 7vw; */
   }
@@ -145,5 +137,6 @@
     height: 50%;
     width: 100%;
     z-index: 4;
+    margin-top: -10%;
   }
 </style>

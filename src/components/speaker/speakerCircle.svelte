@@ -57,4 +57,17 @@
       />
     </filter>
   </defs>
+
+  <foreignObject x="94" y="96" width="437" height="437">
+    <div
+      xmlns="http://www.w3.org/1999/xhtml"
+      style="width: 100%; height: 100%;"
+    >
+      <img
+        src="/img/speaker.jpeg"
+        alt="Speaker"
+        style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;"
+      />
+    </div>
+  </foreignObject>
 </svg>
