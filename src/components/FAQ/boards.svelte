@@ -1,80 +1,92 @@
 <script>
   import MediaQuery from "../../MediaQuery.svelte";
 
-  import CenterMobile from "./center-mobile.svelte";
-  import LeftMobile from "./left-mobile.svelte";
-  import RightMobile from "./right-mobile.svelte";
-  import CenterDesktop from "./center-desktop.svelte";
-  import LeftDesktop from "./left-desktop.svelte";
-  import RightDesktop from "./right-desktop.svelte";
+  import Answer from "./answer.svelte";
+  import QuestionBoard from "./questionBoard.svelte";
+  import MobileFaqBoard from "./MobileFAQBoard.svelte";
+
+  import faq from "../../data/faq.json";
+
+  // declare variables
+  let numOfQuestions = faq.length;
+
+  // keep track of selected index
+  let selectedIndex = 0;
+  let selectedAnswer = faq[selectedIndex].answer;
+  $: selectedAnswer = faq[selectedIndex].answer;
+
+  // keep track of expanded state (for mobile only)
+  let questionList = new Array(faq.length).fill(false);
+
+  // logic for mobile question toggle
+  const toggle = (index) => {
+    questionList[index] = !questionList[index];
+  };
 </script>
 
-<MediaQuery query="(max-width: 865px)" let:matches>
-  {#if matches}
-    <div class="all-mobile">
-      <div class="left-mobile">
-        <LeftMobile />
+<MediaQuery query="(max-width: 768px)" let:matches>
+  <div class="all">
+    {#if matches}
+      <div class="mobileBoard">
+        <MobileFaqBoard />
+        {#each faq as item, index (item.question)}
+          <ol>
+            <li>
+              <button on:click={() => toggle(index)}>
+                {questionList[index] ? "▼" : "▶"}
+                {item.question}
+              </button>
+              {#if questionList[index]}
+                <p />
+              {/if}
+            </li>
+          </ol>
+        {/each}
       </div>
-      <div class="center-mobile">
-        <CenterMobile />
-      </div>
-      <div class="right-mobile">
-        <RightMobile />
-      </div>
-    </div>
-  {:else}
-    <div class="all">
+    {:else}
       <div class="left">
-        <LeftDesktop />
+        <QuestionBoard side="left" bind:selectedIndex boardId="0" />
+        <QuestionBoard side="left" bind:selectedIndex boardId="1" />
+        <QuestionBoard side="left" bind:selectedIndex boardId="2" />
       </div>
       <div class="center">
-        <CenterDesktop />
+        <Answer bind:answer={selectedAnswer} />
       </div>
       <div class="right">
-        <RightDesktop />
+        <QuestionBoard side="right" bind:selectedIndex boardId="3" />
+        <QuestionBoard side="right" bind:selectedIndex boardId="4" />
+        <QuestionBoard side="right" bind:selectedIndex boardId="5" />
       </div>
-    </div>
-  {/if}
+    {/if}
+  </div>
 </MediaQuery>
 
 <style>
   .all {
     display: flex;
     flex-direction: row;
+    width: 100vw;
+    color: white;
   }
-  .left {
+  .all > * {
     width: 30%;
+  }
+
+  .left {
     left: 0;
     align-items: left;
+    /* background-color: lightcoral; */
   }
   .right {
-    width: 30%;
     right: 0;
     align-items: right;
+    /* background-color: lightblue; */
   }
 
   .center {
     width: 40%;
     justify-content: center;
     align-items: center;
-  }
-
-  .all-mobile {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-  }
-  .left-mobile {
-    width: 50vw;
-    left: 0;
-  }
-
-  .right-mobile {
-    width: 50vw;
-    right: 0;
-  }
-  .center-mobile {
-    grid-column: span 2;
-    justify-content: center;
+    /* background-color: lightgreen; */
   }
 </style>
