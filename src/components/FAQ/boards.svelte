@@ -10,13 +10,16 @@
   import faq from "../../data/faq.json";
 
   // keep track of selected index
-  let selectedIndex = 0;
-  let selectedAnswer = faq[selectedIndex].answer;
-  $: selectedAnswer = faq[selectedIndex].answer;
+  let selectedIndex = -1;
+  let selectedAnswer = "Click on a question to see the answer!";
+  // change answer when selected index changes only if it is a valid index
+  $: if (selectedIndex >= 0) {
+    selectedAnswer = faq[selectedIndex].answer;
+  }
 
   // keep track of expanded state (for mobile only)
   let questionList = new Array(faq.length).fill(false);
-  
+
   // logic for mobile question toggle
   let icons = new Array(faq.length).fill(DuckInitial);
 
@@ -24,7 +27,6 @@
     questionList[index] = !questionList[index];
     icons[index] = questionList[index] ? DuckFinal : DuckInitial;
   };
-  
 </script>
 
 <MediaQuery query="(max-width: 768px)" let:matches>
@@ -36,21 +38,25 @@
         </div>
         <div class="qAndA">
           {#each faq as item, index (item.question)}
-          <ol>
-            <li>
-              <button on:click={() => toggle(index)} class="mobileQuestion">
-                <svelte:component this={icons[index]} /> 
-                {@html item.question}
-              </button>
-              <div class="answerText">
-              {#if questionList[index]}
-              <br>
-                {@html item.answer}
-              {/if}
-              </div>
-            </li>
-          </ol>
-        {/each}
+            <ol>
+              <li>
+                <div
+                  class="duckAndQuestion"
+                  on:click={() => toggle(index)}
+                  on:keypress={() => toggle(index)}
+                >
+                  <svelte:component this={icons[index]} />
+                  <span class="questionMobile">{item.question}</span>
+                </div>
+                <div class="answerText">
+                  {#if questionList[index]}
+                    <br />
+                    {@html item.answer}
+                  {/if}
+                </div>
+              </li>
+            </ol>
+          {/each}
         </div>
       </div>
     {:else}
@@ -110,7 +116,7 @@
   }
 
   .boardContainer {
-    width:90vw;
+    width: 90vw;
     margin: 0 auto;
     position: relative;
     align-items: center;
@@ -126,33 +132,24 @@
     max-height: 70%;
     overflow: auto;
   }
-
- 
+  .duckAndQuestion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .questionMobile {
+    margin-left: 5px;
+  }
   .answerText {
     padding-left: 10px;
-    font-size: 1.3em;
     text-align: left;
-    width: 80%; 
-    margin-left:45px;
+    width: 80%;
+    margin-left: 45px;
   }
 
-
-  button {
-      margin: 0;
-      padding: 0;
-      border: none;
-      background: none;
-      text-shadow: 0 0 7px #fff;
-      color: white;
-      padding-left: 10px;
-      padding-top: 2vh;
-      font-size: 1.5em;
-      text-align: left;
-    }
-
-    ol {
-      margin: 5px;
-      padding: 0;
-      list-style: none;
-    }
+  ol {
+    margin: 5px;
+    padding: 0;
+    list-style: none;
+  }
 </style>

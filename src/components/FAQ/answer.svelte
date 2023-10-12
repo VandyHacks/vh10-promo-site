@@ -114,5 +114,8 @@
     width: 80%;
     overflow-y: scroll;
     text-align: center;
+    line-height: 1.5;
+    text-indent: 5px;
+    font-weight: bold;
   }
 </style>
