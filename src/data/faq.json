@@ -9,7 +9,7 @@
   },
   {
     "question": "How do I start?",
-    "answer": "You can start by registering here, at apply.vandyhacks.org! You can also click the registration button above!"
+    "answer": "You can start by registering <a href='https://apply.vandyhacks.org' style='color: #ff509f'>here</a>, at <a href='https://apply.vandyhacks.org' style='color: #ff509f'>apply.vandyhacks.org</a>! <br/>You can also click the registration button above!"
   },
   {
     "question": "What if I've never been to a hackathon?",

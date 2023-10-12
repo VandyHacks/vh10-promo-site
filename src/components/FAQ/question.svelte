@@ -3,16 +3,16 @@
 
   export let selectedIndex;
   export let questionId;
+
+  const handleKeyPress = () => {
+    selectedIndex = questionId;
+  };
 </script>
 
 <div
   class="question-block"
-  on:click={() => {
-    selectedIndex = questionId;
-  }}
-  on:keypress={() => {
-    selectedIndex = questionId;
-  }}
+  on:click={handleKeyPress}
+  on:keypress={handleKeyPress}
 >
   <!-- fallback if no question exists -->
   {#if !faq[questionId]}
@@ -24,8 +24,8 @@
 
 <style>
   .question-block {
-    /* height: 30%; */
     vertical-align: middle;
+    line-height: 1.5;
   }
   .question-block:hover {
     cursor: pointer;

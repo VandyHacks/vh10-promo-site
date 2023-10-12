@@ -4,7 +4,7 @@
 
 <div class="all">
   <!-- Answer -->
-  <div class="answer">{answer}</div>
+  <div class="answer">{@html answer}</div>
 
   <!-- Big Board -->
   <svg
@@ -113,5 +113,6 @@
     position: absolute;
     width: 80%;
     overflow-y: scroll;
+    text-align: center;
   }
 </style>
