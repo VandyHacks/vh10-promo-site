@@ -124,18 +124,15 @@
 
   .asurion-container {
     width: 80vw;
+    left: 10vw;
+    right: 10vw;
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 20px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 3;
   }
   .asurion-logo {
-    width: 300px;
-    margin-left: 40px;
-    margin-top: 5%;
+    margin: 5%;
   }
   .title-text {
     padding: 40px;
