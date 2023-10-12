@@ -25,12 +25,13 @@
   <div class="all">
     {#if matches}
       <div class="mobileBoard">
-        <MobileFaqBoard />
-        {JSON.stringify(questionList)}
+        <div class="boardContainer">
+          <MobileFaqBoard />
+        </div>
         {#each faq as item, index (item.question)}
           <ol>
             <li>
-              <button on:click={() => toggle(index)}>
+              <button on:click={() => toggle(index)} class="mobileQuestion">
                 {questionList[index] ? "▼" : "▶"}
                 {item.question}
               </button>
@@ -86,5 +87,32 @@
     justify-content: center;
     align-items: center;
     /* background-color: lightgreen; */
+  }
+
+  .mobileBoard {
+    overflow: auto; /* Enable scrolling when content overflows */
+    max-height: 400px; /* Set a maximum height to limit scrolling height */
+  }
+
+  .mobileQuestion {
+    display: flex;
+    align-items: center;
+  }
+
+  ol {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style-type: none;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Add a separator between questions/answers */
+  }
+
+  /* Style the expanded answer text */
+  p {
+    margin: 0;
+    padding: 10px;
   }
 </style>

@@ -8,10 +8,10 @@
   import HomeStar from "./HomeStar.svelte";
 </script>
 
-<!-- <HomeStar /> -->
-<!-- <About /> -->
-<!-- <Schedule /> -->
-<!-- <Speaker /> -->
+<HomeStar />
+<About />
+<Schedule />
+<Speaker />
 <FAQ />
 <Sponsors />
 <Footer />

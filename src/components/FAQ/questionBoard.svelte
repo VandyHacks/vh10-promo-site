@@ -6,10 +6,10 @@
   export let boardId;
 </script>
 
-<div class={`board ${side}`}>
-  <Question bind:selectedIndex questionId={parseInt(boardId * 3) + 0} />
-  <Question bind:selectedIndex questionId={parseInt(boardId * 3) + 1} />
-  <Question bind:selectedIndex questionId={parseInt(boardId * 3) + 2} />
+<div class={`board ${side} b-${boardId}`}>
+  <Question {side} bind:selectedIndex questionId={parseInt(boardId * 3) + 0} />
+  <Question {side} bind:selectedIndex questionId={parseInt(boardId * 3) + 1} />
+  <Question {side} bind:selectedIndex questionId={parseInt(boardId * 3) + 2} />
 </div>
 
 <style>
@@ -20,14 +20,30 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    border-radius: 10px;
   }
-  .left {
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
+  .b-0 {
+    margin-left: 20%;
+    width: 70%;
   }
-
-  .right {
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+  .b-1 {
+    margin-left: 2%;
+    width: 80%;
+  }
+  .b-2 {
+    margin-left: 10%;
+    width: 90%;
+  }
+  .b-3 {
+    margin-left: 2%;
+    width: 90%;
+  }
+  .b-4 {
+    margin-left: 20%;
+    width: 65%;
+  }
+  .b-5 {
+    margin-left: 10%;
+    width: 70%;
   }
 </style>
