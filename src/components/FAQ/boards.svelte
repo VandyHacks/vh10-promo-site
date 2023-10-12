@@ -40,12 +40,12 @@
             <li>
               <button on:click={() => toggle(index)} class="mobileQuestion">
                 <svelte:component this={icons[index]} /> 
-                {item.question}
+                {@html item.question}
               </button>
               <div class="answerText">
               {#if questionList[index]}
               <br>
-                {item.answer}
+                {@html item.answer}
               {/if}
               </div>
             </li>
