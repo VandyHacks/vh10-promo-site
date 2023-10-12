@@ -7,9 +7,6 @@
 
   import faq from "../../data/faq.json";
 
-  // declare variables
-  let numOfQuestions = faq.length;
-
   // keep track of selected index
   let selectedIndex = 0;
   let selectedAnswer = faq[selectedIndex].answer;
@@ -29,6 +26,7 @@
     {#if matches}
       <div class="mobileBoard">
         <MobileFaqBoard />
+        {JSON.stringify(questionList)}
         {#each faq as item, index (item.question)}
           <ol>
             <li>
@@ -37,7 +35,7 @@
                 {item.question}
               </button>
               {#if questionList[index]}
-                <p />
+                {item.answer}
               {/if}
             </li>
           </ol>
