@@ -132,7 +132,9 @@
     z-index: 3;
   }
   .asurion-logo {
-    margin: 5%;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
   }
   .title-text {
     padding: 40px;
@@ -179,11 +181,11 @@
   /* Ducks */
   .duck {
     position: absolute;
-    width: 150px;
+    width: 10%;
   }
   .duck-1 {
-    top: 10px;
-    left: calc(75px + 60%);
+    top: 2%;
+    right: 24%;
   }
   .duck-2 {
     right: -50px;
@@ -199,7 +201,7 @@
   }
   .duck-mobile {
     width: 50px;
-    right: 0;
+    right: 2%;
   }
 
   /* Background cloud */
