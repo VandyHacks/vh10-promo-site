@@ -1,14 +1,9 @@
 <script>
   import Boards from "../components/FAQ/boards.svelte";
-  import CenterMobile from "../components/FAQ/center-mobile.svelte";
-  import LeftMobile from "../components/FAQ/left-mobile.svelte";
-  import RightMobile from "../components/FAQ/right-mobile.svelte";
-  import DesktopBoards from "../components/FAQ/desktop-boards.svelte";
 </script>
 
 <div class="container">
   <div class="title">FAQ</div>
-
   <div class="boards">
     <Boards />
   </div>

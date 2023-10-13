@@ -7,74 +7,36 @@
 
   let speakers = [
     {
-      title: "Speaker Series",
-      name: "Co-President Alex Oh",
+      title: "Keynote Speaker",
+      name: "Lacie Thorne",
       description:
-        "Alex Oh is a junior at Vanderbilt University and is a really cool dude. Like a really cool dude. He is also one of the Co-Presidents of VandyHacks X. This is another sentence talking about how awesome he is.",
+        "Lacie Thorne is a dynamic professional who has seamlessly transitioned from the world of fashion to the tech industry. With a foundation in Fashion Design from Parsons School of Design, Lacie pursued her commitment to her career pivot by recently graduating with her MBA with a focus on Sustainability from Yale School of Management.\n" +
+        "Her career has taken her across the globe, with significant roles in both New York City and Hong Kong. Currently, as a Product Manager in tech in New York City, Lacie leads Agile projects and champions user-centered design, enhancing technology solutions for users with intuitive, seamless experiences.\n" +
+        "In addition to her tech role, Lacie is an educator, serving as a Faculty Instructor at Belmont University's O'More School of Design, where she empowers aspiring designers and marketers. Her journey is punctuated by numerous accolades, including the prestigious Yale School of Management Entrepreneurship Fellowship, the Yale Climate Innovation Grant, and the Visa®️ Digital Creators Program, highlighting her dedication to innovation and sustainability in both fashion and technology.\n",
     },
-    {
-      title: "Speaker Series",
-      name: "Co-President Maya",
-      description:
-        "Maya is a junior at Vanderbilt University and is really cool. Like a really cool. She is also one of the Co-Presidents of VandyHacks X. This is another sentence talking about how awesome she is.",
-    },
-    // Add more speakers as needed
   ];
-
-  let currentIndex = 0;
-
-  function goPrev() {
-    if (currentIndex > 0) currentIndex--;
-  }
-
-  function goNext() {
-    if (currentIndex < speakers.length - 1) currentIndex++;
-  }
 </script>
 
 <MediaQuery query="(max-width: 768px)" let:matches>
-  <div class="container" class:container-mobile={matches}>
-    <div class="speakerAndText">
-      <!--left button-->
-      {#if currentIndex > 0}
-        <button
-          class="switchSpeakerRight"
-          style="color: white;"
-          on:click={goPrev}>&lt;</button
-        >
-      {:else}
-        <button class="switchSpeakerLeft" style="color: grey;">&lt;</button>
-      {/if}
-
-      <div class="speakercircle">
-        <SpeakerCircle />
-      </div>
-
-      <div class="text">
-        <div class="title">Speaker Series</div>
-        <div class="name">Co-President Alex Oh</div>
-        <div>
-          Alex Oh is a junior at Vanderbilt University and is a really cool
-          dude. Like a really cool dude. He is also one of the Co-Presidents of
-          VandyHacks X. This is another sentence talking about how awesome he
-          is.
+  <div class="container">
+    <div class="flex" class:flex-mobile={matches}>
+      <div class="speakerAndText" class:speakerAndText-mobile={matches}>
+        <div class="speakercircle" class:speakercircle-mobile={matches}>
+          <SpeakerCircle />
         </div>
-        <!-- implement logic for changing names and description -->
+        <div class="text" class:text-mobile={matches}>
+          <div class="title" class:title-mobile={matches}>
+            {speakers[0].title}
+          </div>
+          <div class="name" class:name-mobile={matches}>{speakers[0].name}</div>
+          <div class="description">
+            {speakers[0].description}
+          </div>
+        </div>
       </div>
-
-      <!--right button-->
-      {#if currentIndex != speakers.length - 1}
-        <button
-          class="switchSpeakerRight"
-          style="color: white;"
-          on:click={goNext}>&gt;</button
-        >
-      {:else}
-        <button class="switchSpeakerRight" style="color: grey;">&gt;</button>
-      {/if}
     </div>
 
-    <div class="scene">
+    <div class="scene" class:scene={!matches}>
       <Scene />
     </div>
   </div>
@@ -85,49 +47,74 @@
     display: block;
     position: relative;
     width: 100vw;
+    /* background-color: pink; */
+    padding-top: 10vh;
   }
-  .container-mobile {
-    height: 60vh;
+
+  .flex {
+    display: flex;
+    flex-direction: row;
   }
+  .flex-mobile {
+    flex-direction: column;
+  }
+
   .speakerAndText {
     display: flex;
     /* justify-content: space-around; removed because it's messing with the right/left arrow positioning */
-    width: 100%;
-    height: 50vh;
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+
+    /* background-color: teal; */
   }
-  .switchSpeakerLeft {
-    background-color: transparent;
-    border: none;
-    font-size: 2em;
-    padding-left: 1vw;
-  }
-  .switchSpeakerRight {
-    background-color: transparent;
-    border: none;
-    font-size: 2em;
-    padding-right: 1vw;
+
+  .speakerAndText-mobile {
+    height: 100vh;
+    flex-direction: column;
+    /* background-color: teal; */
   }
   .speakercircle {
-    width: 30%;
-    float: left;
-    padding-left: 7vw;
-  }
-  .text {
+    width: 35%;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 100%;
-    width: 40%;
+    justify-content: center;
+    /* float: left; */
+    /* padding-left: 7vw; */
+  }
+  .speakercircle-mobile {
+    width: 50%;
+    /* height: 5vh; */
+  }
+
+  .text {
+    width: 50%;
     font-size: 1.5em;
     font-weight: 200;
-    padding-right: 7vw;
+    /* padding-top: 5vw; */
+    display: flex;
+    flex-direction: column;
+    /* height: 100%;
+    padding-right: 7vw; */
+    align-self: center;
+    justify-content: center;
+    text-align: justify;
     color: white;
   }
+  .text-mobile {
+    font-size: 1.25em;
+    width: 100%;
+  }
+
   .title {
     text-shadow: 0 0 7px #fff;
     font-size: 2.5em;
     font-weight: 700;
     margin-bottom: 1vh;
+  }
+
+  .title-mobile {
+    text-align: center;
   }
 
   .name {
@@ -136,15 +123,21 @@
     margin-bottom: 1vh;
   }
 
+  .name-mobile {
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 1vh;
+    text-align: center;
+  }
+  .description {
+    height: 50%;
+    overflow-y: scroll;
+  }
+
   .scene {
     height: 50%;
     width: 100%;
     z-index: 4;
-  }
-
-  @media (max-width: 865px) {
-    .scene {
-      display: none;
-    }
+    margin-top: -10%;
   }
 </style>

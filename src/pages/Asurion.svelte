@@ -11,7 +11,7 @@
   import FifthCloud from "../components/home/fifthCloud.svelte";
 </script>
 
-<MediaQuery query="(max-width: 865px)" let:matches>
+<MediaQuery query="(max-width: 768px)" let:matches>
   <div class="container">
     <!-- back button -->
     <a href="/" use:link>
@@ -124,18 +124,17 @@
 
   .asurion-container {
     width: 80vw;
+    left: 10vw;
+    right: 10vw;
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 20px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 3;
   }
   .asurion-logo {
-    width: 300px;
-    margin-left: 40px;
     margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
   }
   .title-text {
     padding: 40px;
@@ -182,11 +181,11 @@
   /* Ducks */
   .duck {
     position: absolute;
-    width: 150px;
+    width: 10%;
   }
   .duck-1 {
-    top: 10px;
-    left: calc(75px + 60%);
+    top: 2%;
+    right: 24%;
   }
   .duck-2 {
     right: -50px;
@@ -202,7 +201,7 @@
   }
   .duck-mobile {
     width: 50px;
-    right: 0;
+    right: 2%;
   }
 
   /* Background cloud */

@@ -1,10 +1,4 @@
-<svg
-  width="100%"
-  height="676"
-  viewBox="0 0 626 626"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
+<svg viewBox="0 0 626 626" fill="none" xmlns="http://www.w3.org/2000/svg">
   <g filter="url(#filter0_f_930_2)">
     <circle
       cx="312.5"
@@ -63,4 +57,17 @@
       />
     </filter>
   </defs>
+
+  <foreignObject x="94" y="96" width="437" height="437">
+    <div
+      xmlns="http://www.w3.org/1999/xhtml"
+      style="width: 100%; height: 100%;"
+    >
+      <img
+        src="/img/speaker.jpeg"
+        alt="Speaker"
+        style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;"
+      />
+    </div>
+  </foreignObject>
 </svg>

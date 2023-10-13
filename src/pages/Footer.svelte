@@ -8,7 +8,10 @@
     <div class="design">
       <div class="footerApartment">
         <FooterApartment />
-        <a class="apply" href="https://apply.vandyhacks.org">Apply Now</a>
+        <div class="apply">
+          <a href="https://apply.vandyhacks.org" class="applyLink">Apply Now</a>
+        </div>
+        
       </div>
     </div>
     <div class="links">
@@ -56,7 +59,7 @@
   }
   .container {
     width: 100vw;
-    height: 80vh; 
+    height: 100vh; 
     background-color: #0e0e1a;
     text-align: left;
     font-size: 1.5em;
@@ -70,22 +73,34 @@
     color: white;
 
   }
-
   .footerApartment {
     position: absolute;
-    width: 290px;
-    height:434px;
-    top: 10vh;
+    width: 20vw;
+    height:auto;
+    top: 60px;
   }
 
   .apply {
     background-color: #1d1743;
-    padding: 34px;
     border-radius: 10px;
-    bottom: 290px;
-    left: 20vh;
-    position: relative;
+    width: 10vw;
+    height: 7vw;
+    top: 26%;
+    left: 60%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Vertically center content */
+    justify-content: center;
   }
+
+    .applyLink{
+      width: auto;
+      height: auto;
+      margin: 0; /* Remove margin */
+      font-size: 2vw;
+      white-space: nowrap;
+    }
 
   /* .apply:hover {
     text-shadow: 0 0 20px rgba(255, 56, 131, 1);
@@ -107,22 +122,45 @@
       padding-left: 0;
     }
     .container{
-      font-size: 1.3em;
-      height: 170vh;
+      height: auto;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
+      white-space: nowrap;
+      font-size: 4vw;
     }
     
     .design{
-      width: 40vw;
-      height: 40vh;
       z-index: 1;
       order: 2;
       position: relative;
       bottom: 30px;
     }
 
+    .footerApartment{
+      top: 0;
+      width: 50vw;
+      height: auto;
+      position: relative;
+    }
+
+    .apply{
+      top: 25%;
+      left: 30vw;
+      width: 30vw;
+      height:20vw;
+      padding: 0%;
+    }
+
+    .applyLink{
+      width: auto;
+      height: auto;
+      margin: 0; 
+      font-size: 5vw;
+      white-space: nowrap;
+    }
   }
 
 </style>

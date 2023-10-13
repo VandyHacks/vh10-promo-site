@@ -56,8 +56,8 @@
 <style>
   .text-container {
     flex: 1;
-    max-width: calc(100% / 3);
-    padding: 20px;
+    width: 50%;
+    padding: 5%;
   }
 
   .about_title {
@@ -84,7 +84,7 @@
   }
 
   .main-img-container img {
-    width: 550px;
+    width: 80%;
     object-fit: cover;
     z-index: 0;
   }
@@ -116,6 +116,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 50%;
+    padding: 5%;
   }
 
   .miniature-container {
