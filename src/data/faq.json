@@ -1,74 +1,74 @@
 [
   {
     "question": "What is a hackathon?",
-    "answer": "Hackathons are events where students across the country come together for a weekend of innovation and creativity. Participants at VandyHacks have 24 hours to create anything that shows off their creativity and passion!"
+    "answer": "A hackathon is an event where you collaborate with others to create a project from scratch. It’s less about the final product, but more about the teamwork, creativity, and problem-solving skills that are sparked in the process. There is no limit to what you can create, but there are special prizes for projects that fit specific criteria."
+  },
+  {
+    "question": "How do I register?",
+    "answer": "You can register by clicking on the “Apply Now” button at the top of the page, or visit <a href='https://apply.vandyhacks.org' style='color: #ff509f'>apply.vandyhacks.org</a>. You may check your application status on the registration portal."
+  },
+  {
+    "question": "When is the registration deadline?",
+    "answer": "The official deadline has been extended to Friday, October 28th. Apply as early as possible, it helps us with logistics as well!"
+  },
+  {
+    "question": "Will there be other activities?",
+    "answer": "Yes! Our committees have been working hard on creating the best workshops, career fairs with sponsors, fun activities, and so much more! To be eligible to participate in most events, you need to register even if you don’t plan on submitting a project!"
+  },
+  {
+    "question": "Where is the event?",
+    "answer": "VandyHacks X will be held in the Engineering and Science Building at Vanderbilt University. Hackers commuting to Vanderbilt via car will have access to parking. There are also various transportation options nearby."
+  },
+  {
+    "question": "What if I have never been to a hackathon?",
+    "answer": "No need to worry! Not only will you receive a full guide on how to hack a few days before the event, but there will also be VandyHacks team members, mentors, and other hackers to answer your questions!"
+  },
+  {
+    "question": "Do I have to submit a project?",
+    "answer": "Not necessarily! While it is highly recommended that you form a team and try to work on a project together to get the full hackathon experience, you can still learn a lot and have a lot of fun by just participating in our carefully curated events, and even redeeming some exclusive prizes with points accumulated on the way!"
   },
   {
     "question": "What can I submit?",
     "answer": "You may choose any platform, programming language, or format to show off to our judges - you can even present a storyboard or an idea! At VandyHacks, there's no end to the possibilities."
   },
   {
-    "question": "How do I start?",
-    "answer": "You can start by registering <a href='https://apply.vandyhacks.org' style='color: #ff509f'>here</a>, at <a href='https://apply.vandyhacks.org' style='color: #ff509f'>apply.vandyhacks.org</a>! <br/>You can also click the registration button above!"
+    "question": "I’m interested in mentoring or judging",
+    "answer": "Please email us at info@vandyhacks.org or DM @vandyhacks on Instagram"
   },
   {
-    "question": "What if I've never been to a hackathon?",
-    "answer": "Not to worry! A few days before the event, you'll receive an email with a link to our hacker guide, which will contain all the information you need. During the event, our team will be available to answer any questions. As always, feel free to email us at info@vandyhacks.org if you have any questions!"
-  },
-  {
-    "question": "What is the COVID-19 Policy?",
-    "answer": "VandyHacks is adhering to all Vanderbilt University policies. You can find more information about those policies here: <a href='https://www.vanderbilt.edu/healthwellness/public-health/covid19/' style='color: #ff509f'>https://www.vanderbilt.edu/healthwellness/public-health/covid19/</a>"
-  },
-  {
-    "question": "What should I bring?",
-    "answer": "A device you can write code on, and any chargers you might need on-site! If you are traveling from outside of Vanderbilt, bring any supplies you would use on an overnight trip!"
-  },
-  {
-    "question": "How are teams formed and will I need a team?",
-    "answer": "We'll provide an in-person event specifically geared towards team formation! There's also plenty of opportunity to meet people and chat about interests organically at the start of the event. However, teams are not required - feel free to work individually!"
-  },
-  {
-    "question": "Will there be other activities besides hacking?",
-    "answer": "Yes! Our committees have been working hard on creating the best workshops, sponsor networking events, mini-events where you can meet other hackers, and so much more! Our full schedule will be live soon."
-  },
-  {
-    "question": "Can I submit older projects?",
-    "answer": "We require that all submissions be projects that were started, made during, and presented uniquely for VandyHacks X."
-  },
-  {
-    "question": "Can I participate virtually?",
-    "answer": "VandyHacks is open to in-person hackers only. We are providing travel reimbursement on a distance-based tier system, and are so excited to see you all in-person this year!"
-  },
-  {
-    "question": "Where is the event and how do I get there?",
-    "answer": "VandyHacks will be held in the Engineering and Science Building at Vanderbilt University. Hackers commuting to Vanderbilt via car will have access to parking. Vanderbilt is also close to public transportation, and the Nashville airport."
-  },
-  {
-    "question": "Is there travel reimbursement?",
-    "answer": "The deadline for submitting the travel reimbursement form has passed. You are still more than welcome to attend VandyHacks if you are accepted! However, we are unable to provide further travel reimbursement at this time."
-  },
-  {
-    "question": "Where can I find the discord?",
-    "answer": "Once we've approved your application, you'll receive all of the details you need on joining the Discord server!"
+    "question": "Where can I join the Discord?",
+    "answer": "Once your application is approved, you will receive all the details about the event, including the invite to join the event discord."
   },
   {
     "question": "Who can apply?",
-    "answer": "Anyone who is 18 or older and currently enrolled in a college or university with a valid student ID."
+    "answer": "Anyone who is 18 or older by the day of the event opening and is currently enrolled in a college or university with a valid student ID."
   },
   {
-    "question": "Is the event free?",
-    "answer": "VandyHacks is completely free to participants thanks to our corporate sponsors! This includes lodging, food, and swag."
+    "question": "What should I bring?",
+    "answer": "A device you can write code or make designs on, and a compatible charger. If you are traveling from outside of Vanderbilt, bring any supplies you would need on a two-night trip!"
+  },
+  {
+    "question": "How are teams formed?",
+    "answer": "We will provide an event after the opening ceremony specifically for team formation. You may also contact friends or form connections on Discord before the event starts. A team can have at most four people. You also don’t need a team to submit a project, feel free to work individually!"
+  },
+  {
+    "question": "Can I submit older projects?",
+    "answer": "No. We require that all submissions be projects that were started, made during, and presented uniquely for VandyHacks X. Any submissions that were found to contain a noticeable amount of previously made material will be disqualified for all prizes. "
+  },
+  {
+    "question": "Can I participate virtually?",
+    "answer": "No. VandyHacks X is purely in-person. However, we provide travel reimbursements so hopefully, monetary concerns can be less of an issue. "
   },
   {
     "question": "Am I eligible to win a prize?",
-    "answer": "Teams of up to 4 individuals who submit a project are eligible to win a prize. Any attendee is eligible to win, but in order to receive a prize, at least one team member must hold unrestricted work authorization in the United States."
+    "answer": "Teams of up to 4 individuals who submit a project are eligible to win a prize. Any attendee is eligible to win, but in order to receive a prize, team members must hold unrestricted work authorization in the United States."
   },
   {
-    "question": "Can I help mentor or judge?",
-    "answer": "Reach out to us at info@vandyhacks.org!"
+    "question": "Is there travel reimbursement?",
+    "answer": "Travel Reimbursement applications are now closed, and those who applied will be hearing from us soon."
   },
   {
     "question": "I have more questions!",
-    "answer": "Reach out to us at info@vandyhacks.org!"
+    "answer": "Feel free to message us @vandyhacks on Instagram for the fastest response. You can also email us at info@vandyhacks.org"
   }
 ]
