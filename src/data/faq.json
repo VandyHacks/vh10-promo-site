@@ -5,7 +5,7 @@
   },
   {
     "question": "How do I register?",
-    "answer": "You can register by clicking on the “Apply Now” button at the top of the page, or visit apply.vandyhacks.org. You may check your application status on the registration portal."
+    "answer": "You can register by clicking on the “Apply Now” button at the top of the page, or visit <a href='https://apply.vandyhacks.org' style='color: #ff509f'>apply.vandyhacks.org</a>. You may check your application status on the registration portal."
   },
   {
     "question": "When is the registration deadline?",
