@@ -28,7 +28,13 @@
 
   <div class="right-container">
     <div class="main-img-container mountain-img-container">
-      <img src="/img/groupphoto.png" alt="group photo" />
+      <iframe
+        src="https://www.youtube.com/embed/HTmMLr1Lhkk?si=sDWM4r4jRPllMC7H?rel=0&amp;autoplay=1&mute=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      />
       <div class="mountain1_svg">
         <AboutMountain_1 />
       </div>
