@@ -18,6 +18,8 @@
   import Sponsor9 from "../components/sponsors/sponsor9.svelte";
   import Sponsor10 from "../components/sponsors/sponsor10.svelte";
   import Sponsor11 from "../components/sponsors/sponsor11.svelte";
+  import Sponsor12 from "../components/sponsors/sponsor12.svelte";
+
 </script>
 
 <MediaQuery query="(max-width: 768px)" let:matches>
@@ -37,6 +39,13 @@
       <div>
         <a href="https://www.irongalaxystudios.com/" target="_blank">
           <Sponsor2 />
+        </a>
+      </div>
+
+      <!-- Phosphorus -->
+      <div>
+        <a href="https://phosphorus.io/" target="_blank">
+          <Sponsor12 />
         </a>
       </div>
 
@@ -135,7 +144,7 @@
     display: block;
     position: relative;
     width: 100vw;
-    height: 240vh;
+    height: 270vh;
   }
   .sponsorsHeader {
     position: absolute;
