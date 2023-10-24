@@ -4,60 +4,68 @@
     "date": "Oct 28",
     "events": [
       {
-        "name": "Registration",
-        "time": "8AM-9AM"
+        "name": "Check In",
+        "time": "9:30AM-11:30AM"
       },
       {
         "name": "Opening Ceremony",
-        "time": "9AM-9:30AM"
+        "time": "11:30AM-12PM"
       },
       {
-        "name": "Keynote",
-        "time": "9:30AM-10:30AM"
+        "name": "Lunch (Pizza Perfect)",
+        "time": "11AM-1PM"
       },
       {
         "name": "Hacking Begins",
-        "time": "10:30AM"
+        "time": "12:00PM"
       },
       {
-        "name": "Lunch",
-        "time": "12PM-1PM"
-      },
-      {
-        "name": "Workshop: Intro to Git",
+        "name": "Workshop [ESB 048]: Intro to Web Dev (Easy)",
         "time": "1PM-2PM"
       },
       {
-        "name": "Workshop: Intro to Git",
+        "name": "Workshop [ESB 048]: Build a ChatGPT Wrapper (Easy)",
+        "time": "2PM-3PM"
+      },
+      {
+        "name": "Event!!!: Scavenger Hunt",
+        "time": "3PM-5PM"
+      },
+      {
+        "name": "Guest Workshop! [ESB 044]: IBM Qiskit Fall Fest Quantum Computing",
+        "time": "3PM-4PM"
+      },
+      {
+        "name": "Workshop [ESB 048]: AutoML (Medium)",
+        "time": "3PM-4PM"
+      },
+      {
+        "name": "Workshop [ESB 048]: Intro to Firebase and React (Easy)",
+        "time": "4PM-5PM"
+      },
+      {
+        "name": "Workshop [ESB 048]: Computer Vision (Medium)",
+        "time": "5PM-6PM"
+      },
+      {
+        "name": "Dinner (Sitar)",
+        "time": "6PM-8PM"
+      },
+      {
+        "name": "MLH Event: Cup Stacking",
         "time": "1PM-2PM"
       },
       {
-        "name": "Workshop: Intro to Git",
-        "time": "1PM-2PM"
+        "name": "Event [ESB 048]: Slime-Making",
+        "time": "8PM-9PM"
       },
       {
-        "name": "Workshop: Intro to Git",
-        "time": "1PM-2PM"
+        "name": "Event [ESB 048]: Gaming in the Dark",
+        "time": "9PM-10PM"
       },
       {
-        "name": "Workshop: Intro to Git",
-        "time": "1PM-2PM"
-      },
-      {
-        "name": "Workshop: Intro to Git",
-        "time": "1PM-2PM"
-      },
-      {
-        "name": "Workshop: Intro to Git",
-        "time": "1PM-2PM"
-      },
-      {
-        "name": "Workshop: Intro to Git",
-        "time": "1PM-2PM"
-      },
-      {
-        "name": "Workshop: Intro to Git",
-        "time": "1PM-2PM"
+        "name": "Event [ESB 048]: Poker Night",
+        "time": "10PM-11PM"
       }
     ]
   },
@@ -66,72 +74,40 @@
     "date": "Oct 29",
     "events": [
       {
-        "name": "Judging",
-        "time": "8AM-9AM"
+        "name": "Midnight Snack (Krispy Kreme)",
+        "time": "12AM-1AM"
       },
       {
-        "name": "Somethign else",
-        "time": "9AM-9:30AM"
+        "name": "Breakfast (Panera)",
+        "time": "7AM-9:30AM"
       },
       {
-        "name": "Workshop ABCCCC",
-        "time": "9:30AM-10:30AM"
+        "name": "Internship Panel [ESB 048]",
+        "time": "11AM-12PM"
       },
       {
-        "name": "More Workshopee",
-        "time": "10:30AM"
+        "name": "Hacking Ends",
+        "time": "12PM"
       },
       {
-        "name": "Sleep",
-        "time": "12PM-1PM"
+        "name": "Career Fair [Atrium]",
+        "time": "12PM-4PM"
       },
       {
-        "name": "Go Home",
-        "time": "1PM-2PM"
+        "name": "Lunch (Subway)",
+        "time": "12PM-2:30PM"
       },
       {
-        "name": "Go Home",
-        "time": "1PM-2PM"
+        "name": "How to Demo",
+        "time": "12:30PM-1:30PM"
       },
       {
-        "name": "Go Home",
-        "time": "1PM-2PM"
+        "name": "Judging and Presentation [ESB 044/048]",
+        "time": "1:30PM-3:30PM"
       },
       {
-        "name": "Go Home",
-        "time": "1PM-2PM"
-      },
-      {
-        "name": "Go Home",
-        "time": "1PM-2PM"
-      },
-      {
-        "name": "Go Home",
-        "time": "1PM-2PM"
-      },
-      {
-        "name": "Go Home",
-        "time": "1PM-2PM"
-      },
-      {
-        "name": "Go Home",
-        "time": "1PM-2PM"
-      },
-      {
-        "name": "Go Home",
-        "time": "1PM-2PM"
-      },
-      {
-        "name": "Go Home",
-        "time": "1PM-2PM"
-      },
-      {
-        "name": "Go Home",
-        "time": "1PM-2PM"
-      },
-      {
-        "name": "Go Home",
-        "time": "1PM-2PM"
+        "name": "Closing Ceremony [ESB 044/048]",
+        "time": "5PM-6PM"
       }
     ]
   }
