@@ -23,7 +23,15 @@
 
   <div class="right-container">
     <div class="main-img-container mountain-img-container">
-      <img src="/img/groupphoto.png" alt="group photo" />
+      <iframe
+        width="400"
+        height="225"
+        src="https://www.youtube.com/embed/HTmMLr1Lhkk?si=sDWM4r4jRPllMC7H?rel=0&amp;autoplay=1&mute=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      />
       <div class="mountain1_svg">
         <AboutMountain_1 />
       </div>
@@ -56,8 +64,8 @@
 <style>
   .text-container {
     flex: 1;
-    width: 50%;
-    padding: 5%;
+    width: 40%;
+    margin-left: 5%;
   }
 
   .about_title {
@@ -81,6 +89,7 @@
   .mountain-img-container {
     position: relative;
     height: min-content;
+    margin-left: 5%;
   }
 
   .main-img-container img {
@@ -93,7 +102,7 @@
     position: absolute;
     z-index: 1;
     bottom: -25px;
-    width: 200px;
+    width: 40%;
     left: -85px;
   }
 
