@@ -59,7 +59,7 @@
       </div>
 
       <!-- Apply now -->
-      <a href="https://careers.asurion.com/us/en" target="_blank">
+      <a href="https://app.joinhandshake.com/stu/jobs/8181749?ref=employer-show" target="_blank">
         <div class="button apply-now">Apply Now!</div>
       </a>
 
