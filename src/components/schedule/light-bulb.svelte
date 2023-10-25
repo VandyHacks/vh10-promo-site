@@ -215,7 +215,7 @@
   }
   .container-mobile {
     /* move up a bit */
-    top: -1vh;
+    /* top: -1vh; */
   }
 
   .hovering {
@@ -228,5 +228,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: Inter;
+    text-align: center;
   }
 </style>
