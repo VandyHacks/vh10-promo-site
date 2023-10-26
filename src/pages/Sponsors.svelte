@@ -38,7 +38,8 @@
       <!-- Iron Galaxy Studios -->
       <div>
         <a href="https://www.irongalaxystudios.com/" target="_blank">
-          <Sponsor2 />
+			<img style="height: 100px;" src="https://www.gematsu.com/wp-content/uploads/2021/12/Company-Logo_Iron-Galaxy.png">
+          <!-- <Sponsor2 /> -->
         </a>
       </div>
 
@@ -51,8 +52,11 @@
 
       <!-- Google Cloud -->
       <div>
-        <a href="https://cloud.google.com/" target="_blank">
-          <Sponsor3 />
+
+		<a href="https://cloud.google.com/" target="_blank">
+          <!-- <Sponsor3 /> -->
+		  <img style="height: 80px;" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Cloud_logo.svg">
+
         </a>
       </div>
 
@@ -75,36 +79,44 @@
       <!-- Desmos -->
       <div>
         <a href="https://www.desmos.com/" target="_blank">
-          <Sponsor5 />
+			<img style="height: 100px;" src="https://preview.redd.it/8l1kzoyzqyd61.png?width=7652&format=png&auto=webp&s=dd45ed1fbf251fa60475170d68b2fa9c1178762b">
+			<!-- <Sponsor5 /> -->
         </a>
       </div>
 
       <!-- CareYaya -->
       <div>
         <a href="https://www.careyaya.org/" target="_blank">
-          <Sponsor6 />
+          <!-- <Sponsor6 /> -->
+		  <img style="height: 100px;" src="https://s3-eu-west-1.amazonaws.com/tpd/logos/6497ab4339c073f387d42e2a/0x0.png">
         </a>
       </div>
 
       <!-- L3Harris -->
       <div>
         <a href="https://www.l3harris.com/" target="_blank">
-          <Sponsor8 />
+          <!-- <Sponsor8 /> -->
+		  <img style="height: 110px;" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/23/L3Harris_Technologies_logo.svg/1024px-L3Harris_Technologies_logo.svg.png">
+
         </a>
+
       </div>
 
       <div class="sponsorHorizontal">
         <!-- Red Bull -->
         <div>
           <a href="https://www.redbull.com/" target="_blank">
-            <Sponsor7 />
+            <!-- <Sponsor7 /> -->
+			<img style="height: 100px;" src="https://cdn.freebiesupply.com/logos/large/2x/redbull-logo-png-transparent.png">
           </a>
         </div>
 
         <!-- Patient Safety -->
         <div>
           <a href="https://www.patientsafetytech.com/" target="_blank">
-            <Sponsor11 />
+
+			<!-- <img style="height: 100px;" src="https://osf-p-001.sitecorecontenthub.cloud/api/public/content/5ad893448c2744d6a7da9f22eca2ed57?v=12788211"> -->
+			<Sponsor11 />
           </a>
         </div>
       </div>
