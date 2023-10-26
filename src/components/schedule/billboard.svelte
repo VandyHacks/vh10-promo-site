@@ -89,6 +89,7 @@
   }
   .container-mobile {
     width: 290px;
+    /* background-color: red; */
   }
 
   /* Title */
@@ -142,7 +143,7 @@
   .bulb-container {
     position: absolute;
     width: 20%;
-    height: 17%;
+    /* height: 17%; */
     right: 5%;
     top: -12%;
     display: flex;
@@ -150,10 +151,12 @@
     justify-content: space-between;
   }
   .bulb-container-mobile {
+    position: absolute;
     width: 30%;
     /* height: 17%; */
     right: auto;
-    top: -8%;
+    top: -6vh;
+    /* background-color: white; */
   }
   .coming-soon {
     font-size: 3rem;
