@@ -17,7 +17,7 @@
       <div class="block">
         <a href="https://apply.vandyhacks.org/">Judge Portal</a>
         <br /><br />
-        <a href="https://www.asurion.com/">Asurion</a>
+        <a href="https://vandyhacks.org/asurion/">Asurion</a>
         <br /><br />
         <a href="https://xy.vandyhacks.org/">Crossyear</a>
       </div>
