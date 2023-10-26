@@ -113,6 +113,7 @@
   }
   .content-mobile {
     font-size: small;
+    font-family: Inter;
   }
   .row {
     display: flex;
