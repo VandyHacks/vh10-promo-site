@@ -24,8 +24,8 @@
   <div class="right-container">
     <div class="main-img-container mountain-img-container">
       <iframe
-        width="800"
-        height="450"
+        width="500"
+        height="300"
         src="https://www.youtube.com/embed/HTmMLr1Lhkk?si=sDWM4r4jRPllMC7H?rel=0&amp;autoplay=1&mute=1"
         title="YouTube video player"
         frameborder="0"
