@@ -11,18 +11,17 @@
         <div class="apply">
           <a href="https://apply.vandyhacks.org" class="applyLink">Apply Now</a>
         </div>
-        
       </div>
     </div>
     <div class="links">
       <div class="block">
         <a href="https://apply.vandyhacks.org/">Judge Portal</a>
         <br /><br />
-        <a href="https://www.asurion.com/">Asurion</a>
+        <a href="https://vandyhacks.org/asurion/">Asurion</a>
         <br /><br />
         <a href="https://xy.vandyhacks.org/">Crossyear</a>
       </div>
-      <div class="break"></div>
+      <div class="break" />
       <div class="block">
         <a href="https://www.instagram.com/vandyhacks/">Instagram</a>
         <br /><br />
@@ -55,11 +54,10 @@
     display: flex;
     right: 10vw;
     padding: 10px;
-  
   }
   .container {
     width: 100vw;
-    height: 100vh; 
+    height: 100vh;
     background-color: #0e0e1a;
     text-align: left;
     font-size: 1.5em;
@@ -71,12 +69,11 @@
     width: 10vw;
     padding: 5vw;
     color: white;
-
   }
   .footerApartment {
     position: absolute;
     width: 20vw;
-    height:auto;
+    height: auto;
     top: 60px;
   }
 
@@ -94,34 +91,33 @@
     justify-content: center;
   }
 
-    .applyLink{
-      width: auto;
-      height: auto;
-      margin: 0; /* Remove margin */
-      font-size: 2vw;
-      white-space: nowrap;
-    }
+  .applyLink {
+    width: auto;
+    height: auto;
+    margin: 0; /* Remove margin */
+    font-size: 2vw;
+    white-space: nowrap;
+  }
 
   /* .apply:hover {
     text-shadow: 0 0 20px rgba(255, 56, 131, 1);
   } */
 
   @media (max-width: 865px) {
-    .links{
+    .links {
       flex-direction: column;
       position: static;
-    
     }
-    .break{
+    .break {
       height: 2px;
       background-color: white;
     }
-    .block{
+    .block {
       width: 70vw;
       text-align: left;
       padding-left: 0;
     }
-    .container{
+    .container {
       height: auto;
       min-height: 100vh;
       display: flex;
@@ -131,36 +127,35 @@
       white-space: nowrap;
       font-size: 4vw;
     }
-    
-    .design{
+
+    .design {
       z-index: 1;
       order: 2;
       position: relative;
       bottom: 30px;
     }
 
-    .footerApartment{
+    .footerApartment {
       top: 0;
       width: 50vw;
       height: auto;
       position: relative;
     }
 
-    .apply{
+    .apply {
       top: 25%;
       left: 30vw;
       width: 30vw;
-      height:20vw;
+      height: 20vw;
       padding: 0%;
     }
 
-    .applyLink{
+    .applyLink {
       width: auto;
       height: auto;
-      margin: 0; 
+      margin: 0;
       font-size: 5vw;
       white-space: nowrap;
     }
   }
-
 </style>

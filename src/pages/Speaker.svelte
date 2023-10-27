@@ -8,11 +8,12 @@
   let speakers = [
     {
       title: "Keynote Speaker",
-      name: "Lacie Thorne",
+      name: "Kathryn Rickmeyer",
       description:
-        "Lacie Thorne is a dynamic professional who has seamlessly transitioned from the world of fashion to the tech industry. With a foundation in Fashion Design from Parsons School of Design, Lacie pursued her commitment to her career pivot by recently graduating with her MBA with a focus on Sustainability from Yale School of Management.\n" +
-        "Her career has taken her across the globe, with significant roles in both New York City and Hong Kong. Currently, as a Product Manager in tech in New York City, Lacie leads Agile projects and champions user-centered design, enhancing technology solutions for users with intuitive, seamless experiences.\n" +
-        "In addition to her tech role, Lacie is an educator, serving as a Faculty Instructor at Belmont University's O'More School of Design, where she empowers aspiring designers and marketers. Her journey is punctuated by numerous accolades, including the prestigious Yale School of Management Entrepreneurship Fellowship, the Yale Climate Innovation Grant, and the Visa®️ Digital Creators Program, highlighting her dedication to innovation and sustainability in both fashion and technology.\n",
+        "Kathryn Rickmeyer is Nashville reporter covering technology and business. Rickmeyer relocated to Nashville in 2020 and joined the Nashville Post as staff reporter. The former television news producer quickly made a name for herself breaking stories on historic tech legislation to eight figure fundraisers. Her work has been cited in national and international outlets such as NBC, the Guardian and Tech Crunch.\n" +
+        "Last year, Rickmeyer got the entrepreneurial itch. She left Nashville Post and today is communications consultant working with universities, nonprofits and startups to developing messaging and marketing materials.\n" +
+        "Of course, the headline hunter couldn't hang up her reporter hat. She started her own online news outlet —Tennbeat.com, where she continues to cover the local tech and entrepreneur scene. Over the last 12 months, she has broken 30+ stories ranging from a the first female tech founder to raise $1.5 million in 8 hours to new AI innovation studios. More than 8,000 Tennesseans subscribe to the independent publication.\n" +
+        "Rickmeyer isn't just committed to telling Nashville's tech stories but helping write them. She has co-organized 15+ technology events — including a web3 event series at Vanderbilt University, moderated 10+ panels — including one at Litecoin's 2022 Global Conference, and is a Board Member for the local chapter of Blacks in Technology.\n",
     },
   ];
 </script>

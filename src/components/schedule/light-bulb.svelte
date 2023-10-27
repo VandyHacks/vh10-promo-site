@@ -215,7 +215,8 @@
   }
   .container-mobile {
     /* move up a bit */
-    /* top: -1vh; */
+    top: -1vh;
+    /* background-color: blue; */
   }
 
   .hovering {
