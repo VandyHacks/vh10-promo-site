@@ -8,18 +8,10 @@
   import Building2 from "../components/sponsors/building2.svelte";
   import GlowingArrow from "../components/sponsors/glowingArrow.svelte";
   import Sponsor1 from "../components/sponsors/sponsor1.svelte";
-  import Sponsor2 from "../components/sponsors/sponsor2.svelte";
-  import Sponsor3 from "../components/sponsors/sponsor3.svelte";
   import Sponsor4 from "../components/sponsors/sponsor4.svelte";
-  import Sponsor5 from "../components/sponsors/sponsor5.svelte";
-  import Sponsor6 from "../components/sponsors/sponsor6.svelte";
-  import Sponsor7 from "../components/sponsors/sponsor7.svelte";
-  import Sponsor8 from "../components/sponsors/sponsor8.svelte";
   import Sponsor9 from "../components/sponsors/sponsor9.svelte";
   import Sponsor10 from "../components/sponsors/sponsor10.svelte";
-  import Sponsor11 from "../components/sponsors/sponsor11.svelte";
   import Sponsor12 from "../components/sponsors/sponsor12.svelte";
-
 </script>
 
 <MediaQuery query="(max-width: 768px)" let:matches>
@@ -38,7 +30,12 @@
       <!-- Iron Galaxy Studios -->
       <div>
         <a href="https://www.irongalaxystudios.com/" target="_blank">
-          <Sponsor2 />
+          <img
+            style="height: 100px;"
+            src="https://www.gematsu.com/wp-content/uploads/2021/12/Company-Logo_Iron-Galaxy.png"
+            alt="Iron Galaxy Studios"
+          />
+          <!-- <Sponsor2 /> -->
         </a>
       </div>
 
@@ -52,7 +49,11 @@
       <!-- Google Cloud -->
       <div>
         <a href="https://cloud.google.com/" target="_blank">
-          <Sponsor3 />
+          <img
+            style="height: 80px;"
+            src="https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Cloud_logo.svg"
+            alt="Google Cloud"
+          />
         </a>
       </div>
 
@@ -75,21 +76,33 @@
       <!-- Desmos -->
       <div>
         <a href="https://www.desmos.com/" target="_blank">
-          <Sponsor5 />
+          <img
+            style="height: 100px;"
+            src="https://preview.redd.it/8l1kzoyzqyd61.png?width=7652&format=png&auto=webp&s=dd45ed1fbf251fa60475170d68b2fa9c1178762b"
+            alt="Desmos"
+          />
         </a>
       </div>
 
       <!-- CareYaya -->
       <div>
         <a href="https://www.careyaya.org/" target="_blank">
-          <Sponsor6 />
+          <img
+            style="height: 100px;"
+            src="https://s3-eu-west-1.amazonaws.com/tpd/logos/6497ab4339c073f387d42e2a/0x0.png"
+            alt="CareYaya"
+          />
         </a>
       </div>
 
       <!-- L3Harris -->
       <div>
         <a href="https://www.l3harris.com/" target="_blank">
-          <Sponsor8 />
+          <img
+            style="height: 110px;"
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/2/23/L3Harris_Technologies_logo.svg/1024px-L3Harris_Technologies_logo.svg.png"
+            alt="L3Harris"
+          />
         </a>
       </div>
 
@@ -97,14 +110,22 @@
         <!-- Red Bull -->
         <div>
           <a href="https://www.redbull.com/" target="_blank">
-            <Sponsor7 />
+            <img
+              style="height: 100px;"
+              src="https://cdn.freebiesupply.com/logos/large/2x/redbull-logo-png-transparent.png"
+              alt="Red Bull"
+            />
           </a>
         </div>
 
         <!-- Patient Safety -->
         <div>
           <a href="https://www.patientsafetytech.com/" target="_blank">
-            <Sponsor11 />
+            <img
+              style="height: 100px;"
+              src="https://osf-p-001.sitecorecontenthub.cloud/api/public/content/5ad893448c2744d6a7da9f22eca2ed57?v=12788211"
+              alt="Patient Safety Technologies"
+            />
           </a>
         </div>
       </div>
