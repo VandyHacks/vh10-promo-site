@@ -139,6 +139,5 @@
     height: 50%;
     width: 100%;
     z-index: 4;
-    margin-top: -10%;
   }
 </style>
